@@ -1,0 +1,30 @@
+#brand img {
+    height: 70px;
+    width: auto;
+}
+
+#menu {
+    background-color: #000;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+}
+
+#links {
+    display: none;
+}
+
+#hamburger {
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+}
+
+#bars {
+    color: #fff;
+}
+
+#times {
+    color: #fff;
+    display: none;
+}
