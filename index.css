@@ -60,7 +60,8 @@ h1 {
     }
 
     #intro-img {
-        width: 50%;
+        min-width: 400px;
+        width: 60%;
         height: auto;
         margin: auto !important;
     }
@@ -132,9 +133,17 @@ h1 {
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
+    transition-property: all;
+    transition-duration: 1s;
+    animation-duration: 1s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
-.page-scroll .btn-circle:hover i.animated {
+/* .page-scroll .btn-circle:hover i.animated {
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
     -webkit-animation-duration: 1.5s;
@@ -143,6 +152,31 @@ h1 {
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
+    animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: linear;
+} */
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 @-webkit-keyframes pulse {
@@ -179,6 +213,28 @@ h1 {
     }
 }
 
+@media (max-width: 1342px) {
+    #prof-div {
+        display: block !important;
+    }
+
+    #jobs-wrapper {
+        align-items: left !important;
+        width: 100% !important;
+    }
+
+    #goggio-old {
+        width: 30%;
+        height: auto;
+        /* margin: auto !important; */
+    }
+
+    #goggio-new {
+        width: 50%;
+        height: auto;
+    }
+}
+
 .btn-circle {
     width: 90px;
     height: 90px;
@@ -194,6 +250,38 @@ h1 {
     outline: 0;
     color: #fff;
     background: rgba(255, 255, 255, 0.1);
+    cursor: default;
+}
+
+@media (min-width: 992px) {
+    #arrows-down {
+        display: none !important;
+        margin-right: 30% !important;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    #arrows-right {
+        display: none !important;
+    }
+
+    #update-example-container {
+        display: block !important;
+    }
+
+    #goggio-old {
+        max-height: 10%;
+        width: auto;
+        margin-right: 30% !important;
+    }
+
+    #goggio-new {
+        max-height: 10%;
+        width: auto;
+        margin-right: 30% !important;
+    }
 }
 
 #contact {

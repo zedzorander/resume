@@ -15,10 +15,14 @@ $(document).ready(function() {
         toggleSm = !toggleSm
         if(toggleSm) {
             barsSm.hide(600)
-            timesSm.show(600)
+            setTimeout(function() { 
+                timesSm.show(100)
+            }, 600)
         } else {
             timesSm.hide(600)
-            barsSm.show(600)
+            setTimeout(function() {
+                barsSm.show(100)
+            }, 600)
         }
     })
 
@@ -31,14 +35,18 @@ $(document).ready(function() {
         toggle = !toggle
         if(toggle) {
             bars.hide(600)
-            times.show(600)
             menuTitle.hide(600)
-            links.show(600)
+            setTimeout(function() {
+                times.show(100)
+                links.show(100)
+            }, 600)
         } else {
             times.hide(600)
-            bars.show(600)
             links.hide(600)
-            menuTitle.show(600)
+            setTimeout(function() {
+                bars.show()
+                menuTitle.show()
+            }, 600)
         }
     })
 
