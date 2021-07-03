@@ -12,7 +12,29 @@
     <title>Cole Phares</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <!-- MAKE RESPONSIVE -->
+    <nav class="navbar" id="small-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="*">
+                <img src="images/signature.png" alt="signature">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="d-flex me-5">
+                <div class="d-flex justify-content-center rounded" id="hamburger-sm">
+                    <a class="btn">
+                        <i class="fas fa-bars fa-2x" id="bars-sm"></i>
+                        <i class="fas fa-times fa-2x" id="times-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVIGATION > 1122px -->
+    <nav class="navbar sticky-top navbar-expand-lg" id="large-nav">
         <div class="container-fluid">
             <a class="navbar-brand ms-5" href="#" id="brand">
                 <img src="images/signature.png" alt="signature" >
@@ -22,33 +44,171 @@
             </button>
 
             <div class="d-flex me-5">
-                <div class="d-flex justify-content-center align-items-center me-3" id="menu">
-                    <div class="fs-3">Menu</div>
+                <div class="d-flex justify-content-center align-items-center me-3 rounded" id="menu">
+                    <div class="fs-3" id="menuTitle">Menu</div>
+                    <div id="links">
+                        <div class="d-flex">
+                            <a href="#">Description</a>
+                            <a href="#professional-exp">Professional Experience</a>
+                            <a href="#project-exp">Projects</a>
+                            <a href="#education">Education</a>
+                            <a href="#">Certifications</a>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center" id="hamburger">
-                    <a href="#" class="btn">
-                        <i class="fas fa-bars fa-2x" id="bars"></i>
-                        <i class="fas fa-times fa-2x" id="times"></i>
+                <div class="d-flex justify-content-center rounded" id="hamburger-lg">
+                    <a class="btn">
+                        <i class="fas fa-bars fa-2x" id="bars-lg"></i>
+                        <i class="fas fa-times fa-2x" id="times-lg"></i>
                     </a>
                 </div>
             </div>
-
-
-
-
-            <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto me-5">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">Description</a>
-                    <a class="nav-link" href="#">Work Experience</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Education</a>
-                    <a class="nav-link" href="#">Certifications</a>
-                </div>
-            </div> -->
         </div>
     </nav>
 
+    <!-- NAME AND SUMMARY (IS RESPONSIVE)-->
+    <div class="container-fluid d-flex p-5 shadow-lg" id="intro">
+        <div class="d-flex align-items-center ms-5 p-5" id="intro-img">
+            <img src="images/programming.jpg" alt="coder_dude">
+        </div>
+        <div class="container d-flex align-items-center">
+            <div class="container d-flex flex-column">
+                <div class="row">
+                    <div class="col text-end">
+                        <h1 id="name">Cole Phares</h1>
+                    </div>
+                    <div class="col-3 padding"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3 padding"></div>
+                    <div class="col" id="summary">
+                        <p class="text-end fs-4">
+                            Software engineer who blends technical training with outstanding communication skills, team focus, and a strong work ethic. Creative thinker and versatile problem solver looking to provide business solutions to real world problems. Committed to continuous learning and deepening technical expertise.
+                        </p>
+                    </div>
+                    <div class="col-3 padding"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <div class="container-fluid p-5" id="professional-exp">
+        <h1 class="ps-5">Professional Experience</h1>
+        <div class="d-flex ps-5" id="prof-div">
+            <div class="container d-flex align-items-center w-50">
+                <div class="my-5" id="jobs">
+                    <h3 class="fs-4">Web Developer</h3>
+                    <a href="http://www.goggiofoundation.org/" target="_blank" rel="noopener noreferrer"><span class="fst-italic fs-5">Goggio Family Foundation</span></a>
+                    <p class="fs-5">May 2021 - Present</p>
+                    <ul class="fs-5">
+                        <li>Building new, modernized website.</li>
+                        <li>Gathered requirements from foundation members</li>
+                    </ul>
+                    <p class="fs-5"><span class="text-decoration-underline">Tools & Platforms</span>: HTML, CSS, JavaScript, jQuery, Bootstrap 5, Swiper, VS Code</p>
+                </div>
+            </div>
+            
+            <div class="container d-flex ms-5">
+                <img class="img-fluid shadow-lg" id="goggio-old" src="images/goggio_old.png" alt="old_website">
+                <div class="d-flex flex-column mt-5">
+                    <div class="page-scroll text-center h-25">
+                        <div class="btn btn-circle">
+                            <i class="fa fa-angle-double-right fa-2x animated"></i>
+                        </div>
+                    </div>
+                    <div class="page-scroll text-center h-25">
+                        <div class="btn btn-circle">
+                            <i class="fa fa-angle-double-right fa-2x animated"></i>
+                        </div>
+                    </div>
+                    <div class="page-scroll text-center h-25">
+                        <div class="btn btn-circle">
+                            <i class="fa fa-angle-double-right fa-2x animated"></i>
+                        </div>
+                    </div>
+                    <div class="page-scroll text-center h-25">
+                        <div class="btn btn-circle">
+                            <i class="fa fa-angle-double-right fa-2x animated"></i>
+                        </div>
+                    </div>
+                </div>
+                <img class="img-fluid shadow-lg" id="goggio-new" src="images/goggio_new.png" alt="new_website">
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT EXPERIENCE -->
+    <div class="container-fluid p-5" id="project-exp">
+        <h1 class="ps-5">Project Experience</h1>
+        <div class="container d-flex my-5">
+            <div class="project me-5 w-50">
+                <h3>Capstone Project: Lean Portland</h3>
+                <p><span class="fst-italic fs-4">Created SynchroLean, a team and task management application. Application was developed for the Vancouver Clinic to modernize their workflow management system.</span></p>
+                <p class="fs-5">April 2018 - August 2018</p>
+                <ul>
+                    <li class="fs-5">Successfully delivered program on time while meeting all requirements including a database, server, mobile, web application with easy to use UI.</li>
+                    <li class="fs-5">Independently researched required domain knowledge. </li>
+                    <li class="fs-5">Created account model for storing user data and the account web API for the server. Finalized edit account capability; created change team owner, remove team member, leave team, delete team, and compile team metrics functionalities for the web-app.</li>
+                    <li class="fs-5">Designed and built an automated graphing page which tracked team metrics for user-defined lengths of time.</li>
+                </ul>
+                <p class="fs-5"><span class="text-decoration-underline">Tools & Platforms</span>: C#, Typescript, ASP.NET Core 2.0, Angular 6, SQLite, VS Code</p>
+            </div>
+            <div class="project ms-5 w-50">
+                <h3>Full Stack Web Development Class Project</h3>
+                <p><span class="fst-italic fs-4">Web-based meme generator</span></p>
+                <p class="fs-5">October 2018 - December 2018</p>
+                <ul>
+                    <li class="fs-5">Developed a web-based program that allows users to create and like/dislike memes.</li>
+                </ul>
+                <p class="fs-5"><span class="text-decoration-underline">Tools & Platforms</span>: JavaScript, TypeScript, MongoDB, Express, Angular 6, Node.js, VS Code</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="container-fluid ps-5" id="education">
+        <h1 class="ps-5">Education</h1>
+        <div class="d-flex pt-5">
+            <div class="ms-5 w-50">
+                <div class="school fs-5">
+                    <h3>Portland State University</h3>
+                    <p>Portland, Oregon</p>
+                    <p>September 2016 - December 2018</p>
+                    <p>B.S., Computer Science: 3.64 GPA</p>
+                </div>
+                <a class="ps-5" href="https://www.pdx.edu" target="_blank" rel="noopener noreferrer">
+                    <img class="w-25 mt-5" src="images/psu.svg" alt="psu_logo">
+                </a>
+            </div>
+            <div>
+                <div class="school fs-5">
+                    <h3>Portland Community College</h3>
+                    <p>Portland, Oregon</p>
+                    <p>January 2014 - June 2016</p>
+                </div>
+                <a  href="https://www.pcc.edu" target="_blank" rel="noopener noreferrer">
+                    <img class="w-50 mt-5" src="images/pcc.svg" alt="pcc_logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-fluid pt-5 ps-5" id="contact">
+        <h1 class="ps-5">Contact</h1>
+        <div class="p-5 d-flex flex-column fs-5">
+            <p>Phone: (925) 212-2946</p>
+            <p>Email: colephares@gmail.com</p>
+            <a href="https://www.linkedin.com/in/colephares/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/zedzorander" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+    </div>
     
 
     <!-- JavaScript Bundle with Popper -->
