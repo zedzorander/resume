@@ -213,7 +213,7 @@ h1 {
     }
 }
 
-@media (max-width: 1342px) {
+@media (max-width: 1342px) and (min-width: 992px) {
     #prof-div {
         display: block !important;
     }
@@ -224,14 +224,13 @@ h1 {
     }
 
     #goggio-old {
-        width: 30%;
-        height: auto;
-        /* margin: auto !important; */
+        width: 30% !important;
+        height: auto !important;
     }
 
     #goggio-new {
-        width: 50%;
-        height: auto;
+        width: 50% !important;
+        height: auto !important;
     }
 }
 
@@ -256,13 +255,21 @@ h1 {
 @media (min-width: 992px) {
     #arrows-down {
         display: none !important;
-        margin-right: 30% !important;
-        width: 100%;
-        height: auto;
+        width: auto !important;
+        height: 100% !important;
     }
 }
 
 @media (max-width: 991px) {
+    #prof-div {
+        display: block !important;
+    }
+
+    #jobs-wrapper {
+        align-items: left !important;
+        width: 100% !important;
+    }
+
     #arrows-right {
         display: none !important;
     }
@@ -274,13 +281,11 @@ h1 {
     #goggio-old {
         max-height: 10%;
         width: auto;
-        margin-right: 30% !important;
     }
 
     #goggio-new {
         max-height: 10%;
         width: auto;
-        margin-right: 30% !important;
     }
 }
 

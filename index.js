@@ -1,3 +1,6 @@
+var myHeaders = new Headers();
+myHeaders.append('access-control-allow-origin', 'https://master.d31q4gyspf5adf.amplifyapp.com/')
+
 $(document).ready(function() {
     var menuTitle = $("#menuTitle")
     var links = $("#links")
