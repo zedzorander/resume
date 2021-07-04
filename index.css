@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @media (min-width: 1123px) {
     #small-nav {
         display: none;
@@ -12,11 +17,6 @@
 
 nav {
     background-color: #162B32;
-}
-
-#intro img {
-    max-width: 100%;
-    height: auto;
 }
 
 #menu {
@@ -34,6 +34,11 @@ nav {
     height: 50px;
 }
 
+#hamburger-sm {
+    float: right;
+    position: relative !important;
+}
+
 #bars-lg, #bars-sm,
 #times-lg, #times-sm {
     color: #162B32;
@@ -46,7 +51,30 @@ nav {
 }
 
 #links a:hover {
-    /* text-decoration: underline; */
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#something {
+    position: relative;
+}
+
+#small-nav-menu {
+    /* display: none !important; */
+    position: absolute !important;
+    z-index: auto;
+    margin-top: 70px;
+    background-color: #c01900;
+}
+
+#small-nav-menu a {
+    text-decoration: none;
+    color: #162B32;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#small-nav-menu a:hover {
     text-shadow: 0px 0px 5px #fff;
 }
 
@@ -86,6 +114,8 @@ h1 {
 
 /* rotating hero picture */
 #intro img {
+    max-width: 100%;
+    height: auto;
     transform: rotate(-13deg);
     -ms-transform: rotate(-13deg);
     -moz-transform: rotate(-13deg);
@@ -142,25 +172,6 @@ h1 {
     animation-timing-function: linear;
     animation-timing-function: linear;
 }
-
-/* .page-scroll .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    animation-name: pulse;
-    animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-timing-function: linear;
-} */
 
 @keyframes pulse {
     0% {
@@ -300,5 +311,6 @@ h1 {
 }
 
 #contact i {
-    margin-bottom: 15px;
+    margin-right: 30px;
+    color: #c01900;
 }

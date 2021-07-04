@@ -5,9 +5,14 @@ $(document).ready(function() {
     var bars = $("#bars-lg")
     var times = $("#times-lg")
     times.hide()
+
     var barsSm = $("#bars-sm")
     var timesSm = $("#times-sm")
     timesSm.hide()
+    var smallNav = $("#small-nav-menu")
+    smallNav.hide()
+
+
     var toggle = false
     var toggleSm = false
 
@@ -17,9 +22,11 @@ $(document).ready(function() {
             barsSm.hide(600)
             setTimeout(function() { 
                 timesSm.show(100)
+                smallNav.show(100)
             }, 600)
         } else {
             timesSm.hide(600)
+            smallNav.hide(600)
             setTimeout(function() {
                 barsSm.show(100)
             }, 600)
@@ -49,8 +56,6 @@ $(document).ready(function() {
             }, 600)
         }
     })
-
-
 })
 
 
