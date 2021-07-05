@@ -6,29 +6,29 @@ $(document).ready(function() {
     var times = $("#times-lg")
     times.hide()
 
-    var barsSm = $("#bars-sm")
-    var timesSm = $("#times-sm")
-    timesSm.hide()
-    var smallNav = $("#small-nav-menu")
-    smallNav.hide()
+    var barsMed = $("#bars-med")
+    var timesMed = $("#times-med")
+    timesMed.hide()
+    var mediumNav = $("#med-nav-menu")
+    mediumNav.hide()
 
 
     var toggle = false
-    var toggleSm = false
+    var toggleMed = false
 
-    $("#hamburger-sm").on("click", function() {
-        toggleSm = !toggleSm
-        if(toggleSm) {
-            barsSm.hide(600)
+    $("#hamburger-med").on("click", function() {
+        toggleMed = !toggleMed
+        if(toggleMed) {
+            barsMed.hide(600)
             setTimeout(function() { 
-                timesSm.show(100)
-                smallNav.show(100)
+                timesMed.show(100)
+                mediumNav.show(100)
             }, 600)
         } else {
-            timesSm.hide(600)
-            smallNav.hide(600)
+            timesMed.hide(600)
+            mediumNav.hide(600)
             setTimeout(function() {
-                barsSm.show(100)
+                barsMed.show(100)
             }, 600)
         }
     })
