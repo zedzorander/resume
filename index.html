@@ -78,7 +78,7 @@
         </div>
     </nav>
 
-    <!-- NAME AND SUMMARY (IS RESPONSIVE)-->
+    <!-- NAME AND SUMMARY -->
     <div class="container-fluid d-flex p-5 shadow-lg" id="intro">
         <div class="d-flex align-items-center ms-5 p-5" id="intro-img">
             <img src="images/programming.jpg" alt="coder_dude">
@@ -104,7 +104,7 @@
         </div>
     </div>
 
-    <!-- PROFESSIONAL EXPERIENCE (RESPONSIVE) -->
+    <!-- PROFESSIONAL EXPERIENCE -->
     <div class="container-fluid p-5" id="professional-exp">
         <h1 class="ps-5">Professional Experience</h1>
         <div class="d-flex ps-5" id="prof-div">
@@ -123,49 +123,29 @@
             
             <div class="container-fluid d-flex ms-5" id="update-example-container">
                 <img class="img-fluid shadow-lg" id="goggio-old" src="images/goggio_old.png" alt="old_website">
-                <!-- ARROWS DOWN SMALL -->
-                <div class="d-flex justify-content-center mt-5 p-5" id="arrows-down">
+                <div class="d-flex flex-column mt-5" id="arrows">
                     <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-down fa-2x animated"></i>
+                        <div class="btn btn-circle arrow-icons">
+                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
+                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
                         </div>
                     </div>
                     <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-down fa-2x animated"></i>
+                        <div class="btn btn-circle arrow-icons">
+                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
+                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
                         </div>
                     </div>
                     <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-down fa-2x animated"></i>
+                        <div class="btn btn-circle arrow-icons">
+                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
+                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
                         </div>
                     </div>
                     <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-down fa-2x animated"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- ARROWS RIGHT LARGE-->
-                <div class="d-flex flex-column mt-5" id="arrows-right">
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-right fa-2x animated"></i>
-                        </div>
-                    </div>
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-right fa-2x animated"></i>
-                        </div>
-                    </div>
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-right fa-2x animated"></i>
-                        </div>
-                    </div>
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle">
-                            <i class="fas fa-angle-double-right fa-2x animated"></i>
+                        <div class="btn btn-circle arrow-icons">
+                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
+                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
                         </div>
                     </div>
                 </div>
@@ -174,11 +154,11 @@
         </div>
     </div>
 
-    <!-- PROJECT EXPERIENCE -->
-    <div class="container-fluid p-5" id="project-exp">
+    <!-- PROJECT EXPERIENCE (Not responsive) -->
+    <div class="container-fluid ps-5" id="project-exp">
         <h1 class="ps-5">Project Experience</h1>
-        <div class="container d-flex my-5">
-            <div class="project me-5 w-50">
+        <div class="d-flex ms-5 pt-5" id="projects">
+            <div class="project pe-5 w-50" id="synchrolean">
                 <h3>Capstone Project: Lean Portland</h3>
                 <p><span class="fst-italic fs-4">Created SynchroLean, a team and task management application. Application was developed for the Vancouver Clinic to modernize their workflow management system.</span></p>
                 <p class="fs-5">April 2018 - August 2018</p>
@@ -190,7 +170,7 @@
                 </ul>
                 <p class="fs-5"><span class="text-decoration-underline">Tools & Platforms</span>: C#, Typescript, ASP.NET Core 2.0, Angular 6, SQLite, VS Code</p>
             </div>
-            <div class="project ms-5 w-50">
+            <div class="project" id="meme">
                 <h3>Full Stack Web Development Class Project</h3>
                 <p><span class="fst-italic fs-4">Web-based meme generator</span></p>
                 <p class="fs-5">October 2018 - December 2018</p>
@@ -205,26 +185,22 @@
     <!-- EDUCATION -->
     <div class="container-fluid ps-5" id="education">
         <h1 class="ps-5">Education</h1>
-        <div class="d-flex pt-5">
-            <div class="ms-5 w-50">
-                <div class="school fs-5">
-                    <h3>Portland State University</h3>
-                    <p>Portland, Oregon</p>
-                    <p>September 2016 - December 2018</p>
-                    <p>B.S., Computer Science: 3.64 GPA</p>
-                </div>
-                <a class="ps-5" href="https://www.pdx.edu" target="_blank" rel="noopener noreferrer">
-                    <img class="w-25 mt-5" src="images/psu.svg" alt="psu_logo">
+        <div class="d-flex pt-5 ms-5" id="schools">
+            <div class="school fs-5 w-50" id="psu">
+                <h3>Portland State University</h3>
+                <p>Portland, Oregon</p>
+                <p>September 2016 - December 2018</p>
+                <p>B.S., Computer Science: 3.64 GPA</p>
+                <a href="https://www.pdx.edu" target="_blank" rel="noopener noreferrer">
+                    <img class="mt-5 img-fluid" src="images/psu.svg" alt="psu_logo">
                 </a>
             </div>
-            <div>
-                <div class="school fs-5">
-                    <h3>Portland Community College</h3>
-                    <p>Portland, Oregon</p>
-                    <p>January 2014 - June 2016</p>
-                </div>
+            <div class="school fs-5" id="pcc">
+                <h3>Portland Community College</h3>
+                <p>Portland, Oregon</p>
+                <p>January 2014 - June 2016</p>
                 <a  href="https://www.pcc.edu" target="_blank" rel="noopener noreferrer">
-                    <img class="w-50 mt-5" src="images/pcc.svg" alt="pcc_logo">
+                    <img class="mt-5 img-fluid" src="images/pcc.svg" alt="pcc_logo">
                 </a>
             </div>
         </div>

@@ -281,14 +281,31 @@ h1 {
 }
 
 @media (min-width: 992px) {
-    #arrows-down {
+    .arrows-down {
         display: none !important;
-        width: auto !important;
-        height: 100% !important;
+        /* width: auto !important;
+        height: 100% !important; */
     }
 }
 
 @media (max-width: 991px) {
+    .arrows-right {
+        display: none !important;
+    }
+
+    #arrows {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .arrow-icons {
+        font-size: 32px;
+    }
+
+    .arrows i {
+        font-size: 0.5em;
+    }
+
     #prof-div {
         display: block !important;
     }
@@ -298,12 +315,9 @@ h1 {
         width: 100% !important;
     }
 
-    #arrows-right {
-        display: none !important;
-    }
-
     #update-example-container {
         display: block !important;
+        margin-left: 0 !important;
     }
 
     #goggio-old {
@@ -314,6 +328,34 @@ h1 {
     #goggio-new {
         max-height: 10%;
         width: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    #projects {
+        display: block !important;
+    }
+
+    #synchrolean, #meme {
+        width: 85% !important;
+    }
+
+    #meme {
+        margin-top: 50px !important;
+    }
+}
+
+@media (max-width: 832px) {
+    #schools {
+        display: block !important;
+    }
+
+    #psu, #pcc {
+        width: 85% !important;
+    }
+
+    #pcc {
+        margin-top: 50px !important;
     }
 }
 
