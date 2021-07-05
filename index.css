@@ -3,13 +3,37 @@
     padding: 0;
 }
 
+@media (max-width: 644px) {
+    #large-nav {
+        display: none;
+    }
+    #med-nav-menu {
+        position: absolute !important;
+        background-color: #c01900;
+        transform: translate(-41px, 70px); 
+    }
+
+    #med-nav-items {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    #med-nav-menu a {
+        text-decoration: none;
+        color: #162B32;
+        font-weight: bold;
+        padding: 0 15px;
+        margin: 5px 0;
+    }
+}
+
 @media (min-width: 1123px) {
     #med-nav {
         display: none;
     }
 }
 
-@media (max-width: 1122px) {
+@media (max-width: 1122px) and (min-width: 645px) {
     #large-nav {
         display: none;
     }
