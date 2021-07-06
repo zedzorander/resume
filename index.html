@@ -27,13 +27,12 @@
 
             <div class="d-flex flex-column" id="med-nav-button-menu">
                 <div class="d-flex justify-content-center rounded" id="hamburger-med">
-                    <a class="btn">
+                    <a class="btn d-flex align-items-center">
                         <i class="fas fa-bars fa-2x" id="bars-med"></i>
                         <i class="fas fa-times fa-2x" id="times-med"></i>
                     </a>
-                    <div class="rounded " id="med-nav-menu">
-                        <div class="d-flex align-items-center" id="med-nav-items">
-                            <a href="#">Description</a>
+                    <div class="rounded" id="med-nav-menu">
+                        <div class="d-flex flex-column" id="med-nav-items">
                             <a href="#professional-exp">Professional Experience</a>
                             <a href="#project-exp">Projects</a>
                             <a href="#education">Education</a>
@@ -60,7 +59,6 @@
                     <div class="fs-3" id="menuTitle">Menu</div>
                     <div id="links">
                         <div class="d-flex">
-                            <a href="#">Description</a>
                             <a href="#professional-exp">Professional Experience</a>
                             <a href="#project-exp">Projects</a>
                             <a href="#education">Education</a>
@@ -79,27 +77,31 @@
     </nav>
 
     <!-- NAME AND SUMMARY -->
-    <div class="container-fluid d-flex shadow-lg pb-3" id="intro">
-        <div id="intro-img">
+    <!-- <div class="container-fluid d-lg-flex justify-content-center">
+        <div id="test-intro">
+            <h1>Cole Phares</h1>
+        </div>
+    </div> -->
+
+    <div class="container-fluid d-md-flex shadow-lg pb-3" id="hero">
+        <div id="hero-img">
             <img class="my-5 img-fluid" src="images/programming.jpg" alt="coder_dude">
         </div>
-        <div class="container d-flex align-items-center">
-            <div class="container d-flex flex-column">
-                <div class="row">
-                    <div class="col text-end">
-                        <h1 id="name">Cole Phares</h1>
-                    </div>
-                    <div class="col-3 padding"></div>
+        <div class="container" id="summary">
+            <div class="row">
+                <div class="col text-end">
+                    <h1 id="name">Cole Phares</h1>
                 </div>
-                <div class="row">
-                    <div class="col-3 padding"></div>
-                    <div class="col" id="summary">
-                        <p class="text-end">
-                            Software engineer who blends technical training with outstanding communication skills, team focus, and a strong work ethic. Creative thinker and versatile problem solver looking to provide business solutions to real world problems. Committed to continuous learning and deepening technical expertise.
-                        </p>
-                    </div>
-                    <div class="col-3 padding"></div>
+                <div class="col-3 padding"></div>
+            </div>
+            <div class="row">
+                <div class="col-3 padding"></div>
+                <div class="col">
+                    <p class="text-end">
+                        Software engineer who blends technical training with outstanding communication skills, team focus, and a strong work ethic. Creative thinker and versatile problem solver looking to provide business solutions to real world problems. Committed to continuous learning and deepening technical expertise.
+                    </p>
                 </div>
+                <div class="col-3 padding"></div>
             </div>
         </div>
     </div>

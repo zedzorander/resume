@@ -7,47 +7,37 @@ html {
     font-family: monospace;
 }
 
-@media (max-width: 448px) {
+#med-nav-menu {
+    position: absolute !important;
+    background-color: #c01900;
+}
+
+@media (max-width: 575px) {
     #med-nav-button-menu {
         display: none !important;
     }
-
-    h1 {
-        font-size: 20px !important;
-    }
-
-    h3 {
-        font-size: 15px !important;
-    }
-
-    #intro-img {
-        max-width: 90%;
-        height: auto;
-    }
 }
 
-@media (max-width: 644px) {
+/* med-nav <= 767px */
+@media (max-width: 767px) {
     #large-nav {
         display: none;
     }
 
     #med-nav-menu {
-        position: absolute !important;
-        background-color: #c01900;
-        transform: translate(-41px, 70px); 
+        transform: translate(-31px, 70px); 
     }
 
     #med-nav-items {
-        flex-direction: column !important;
         text-align: center;
     }
 
-    #med-nav-menu a {
+    #med-nav-items a {
         text-decoration: none;
         color: #162B32;
         font-weight: bold;
         padding: 0 15px;
-        margin: 5px 0;
+        margin: 5px 0 !important;
     }
 }
 
@@ -57,18 +47,20 @@ html {
     }
 }
 
-@media (max-width: 1122px) and (min-width: 645px) {
+@media (max-width: 1122px) and (min-width: 768px) {
     #large-nav {
         display: none;
     }
     
     #med-nav-menu {
-        position: absolute !important;
-        background-color: #c01900;
-        transform: translate(-257px, 70px);
+        transform: translate(-168px, 70px);
     }
 
-    #med-nav-menu a {
+    #med-nav-items {
+        flex-direction: row !important;
+    }
+
+    #med-nav-items a {
         text-decoration: none;
         color: #162B32;
         font-weight: bold;
@@ -124,7 +116,28 @@ h1 {
     text-decoration: underline;
 }
 
-@media (max-width: 1122px) {
+@media (max-width: 767px) {
+    #hero {
+        padding-top: 20px;
+    }
+    
+    #hero-img {
+        width: 60%;
+        height: auto;
+        margin: auto !important;
+        /* margin-top: 20px; */
+    }
+    
+    .padding {
+        display: none;
+    }
+
+    #summary {
+        margin-top: 40px;
+    }
+}
+
+/* @media (max-width: 1122px) {
     #intro  {
         display: block !important;
     }
@@ -146,15 +159,15 @@ h1 {
     #summary p {
         text-align: center !important;
     }
-}
+} */
 
-#intro {
+#hero {
     background-color: #162B32;
     color: #fff;
 }
 
 /* rotating hero picture */
-#intro img {
+#hero img {
     transform: rotate(-13deg);
     -ms-transform: rotate(-13deg);
     -moz-transform: rotate(-13deg);
@@ -166,7 +179,7 @@ h1 {
     transition-duration: 1s;
 }
 
-#intro img:hover {
+#hero img:hover {
     transform: rotate(-1800deg);
     -ms-transform: rotate(-1800deg);
     -moz-transform: rotate(-1800deg);
