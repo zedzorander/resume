@@ -7,19 +7,23 @@ html {
     font-family: monospace;
 }
 
+h1 {
+    text-decoration: underline;
+}
+
 #med-nav-menu {
     position: absolute !important;
     background-color: #c01900;
 }
 
-/* No menu for small screens */
+/* No menu for small breakpoint */
 @media (max-width: 575px) {
     #med-nav-button-menu {
         display: none !important;
     }
 }
 
-/* med-nav <= 767px */
+/* med-nav for medium breakpoint */
 @media (max-width: 767px) {
     #large-nav {
         display: none;
@@ -64,7 +68,7 @@ html {
     }
 }
 
-/* Remove med-nav for large screens */
+/* Remove med-nav for large breakpoint */
 @media (min-width: 1200px) {
     #med-nav {
         display: none;
@@ -110,55 +114,6 @@ nav {
     text-shadow: 0px 0px 5px #fff;
 }
 
-h1 {
-    text-decoration: underline;
-}
-
-@media (max-width: 767px) {
-    #hero {
-        padding-top: 20px;
-    }
-    
-    #hero-img {
-        width: 60%;
-        height: auto;
-        margin: auto !important;
-        /* margin-top: 20px; */
-    }
-    
-    .padding {
-        display: none;
-    }
-
-    #summary {
-        margin-top: 40px;
-    }
-}
-
-/* @media (max-width: 1122px) {
-    #intro  {
-        display: block !important;
-    }
-
-    #intro-img {
-        width: 60%;
-        height: auto;
-        margin: auto !important;
-    }
-
-    .padding {
-        display: none;
-    }
-
-    #name {
-        text-align: center !important;
-    }
-
-    #summary p {
-        text-align: center !important;
-    }
-} */
-
 #hero {
     background-color: #162B32;
     color: #fff;
@@ -183,6 +138,57 @@ h1 {
     -moz-transform: rotate(-1800deg);
     -webkit-transform: rotate(-1800deg);
     -o-transform: rotate(-1800deg);
+}
+
+/* hero section for medium and smaller breakpoints */
+@media (max-width: 767px) {
+    #hero {
+        padding-top: 20px;
+    }
+    
+    #hero-img {
+        width: 60%;
+        height: auto;
+        margin: auto !important;
+    }
+    
+    .padding {
+        display: none;
+    }
+
+    #summary {
+        margin-top: 40px;
+    }
+}
+
+/* hero section for medium to large breakpoint */
+@media (min-width: 768px) {
+    #hero-img {
+        margin-left: 50px;
+    }
+
+    #summary {
+        margin-left: 50px;
+    }
+
+    #name {
+        font-size: 40px !important;
+    }
+
+    #description {
+        font-size: 20px !important;
+    }
+}
+
+/* hero section extra large breakpoint */
+@media (min-width: 1200px) {
+    #summary {
+        margin: 0 100px;
+    }
+
+    #description {
+        font-size: 25px !important;
+    }
 }
 
 #goggio-old {
