@@ -25,7 +25,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="d-flex flex-column me-5" id="med-nav-button-menu">
+            <div class="d-flex flex-column" id="med-nav-button-menu">
                 <div class="d-flex justify-content-center rounded" id="hamburger-med">
                     <a class="btn">
                         <i class="fas fa-bars fa-2x" id="bars-med"></i>
@@ -48,15 +48,15 @@
     <!-- NAVIGATION > 1122px -->
     <nav class="navbar sticky-top navbar-expand-lg" id="large-nav">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#" id="brand">
+            <a class="navbar-brand" href="#" id="brand">
                 <img src="images/signature.png" alt="signature" >
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="d-flex me-5">
-                <div class="d-flex justify-content-center align-items-center me-3 rounded" id="menu">
+            <div class="d-flex">
+                <div class="d-flex justify-content-center align-items-center rounded" id="menu">
                     <div class="fs-3" id="menuTitle">Menu</div>
                     <div id="links">
                         <div class="d-flex">
@@ -79,9 +79,9 @@
     </nav>
 
     <!-- NAME AND SUMMARY -->
-    <div class="container-fluid d-flex p-5 shadow-lg" id="intro">
-        <div class="d-flex align-items-center ms-5 p-5" id="intro-img">
-            <img src="images/programming.jpg" alt="coder_dude">
+    <div class="container-fluid d-flex shadow-lg pb-3" id="intro">
+        <div id="intro-img">
+            <img class="my-5 img-fluid" src="images/programming.jpg" alt="coder_dude">
         </div>
         <div class="container d-flex align-items-center">
             <div class="container d-flex flex-column">
@@ -94,7 +94,7 @@
                 <div class="row">
                     <div class="col-3 padding"></div>
                     <div class="col" id="summary">
-                        <p class="text-end fs-4">
+                        <p class="text-end">
                             Software engineer who blends technical training with outstanding communication skills, team focus, and a strong work ethic. Creative thinker and versatile problem solver looking to provide business solutions to real world problems. Committed to continuous learning and deepening technical expertise.
                         </p>
                     </div>
@@ -105,45 +105,39 @@
     </div>
 
     <!-- PROFESSIONAL EXPERIENCE -->
-    <div class="container-fluid p-5" id="professional-exp">
-        <h1 class="ps-5">Professional Experience</h1>
-        <div class="d-flex ps-5" id="prof-div">
+    <div class="container-fluid mt-5" id="professional-exp">
+        <h1>Professional Experience</h1>
+        <div class="d-flex" id="prof-div">
             <div class="container d-flex align-items-center w-50" id="jobs-wrapper">
-                <div class="my-5" id="jobs">
-                    <h3 class="fs-4">Web Developer</h3>
-                    <a href="http://www.goggiofoundation.org/" target="_blank" rel="noopener noreferrer"><span class="fst-italic fs-5">Goggio Family Foundation</span></a>
-                    <p class="fs-5">May 2021 - Present</p>
-                    <ul class="fs-5">
+                <div id="jobs">
+                    <h3>Web Developer</h3>
+                    <a href="http://www.goggiofoundation.org/" target="_blank" rel="noopener noreferrer"><span class="fst-italic ">Goggio Family Foundation</span></a>
+                    <p>May 2021 - Present</p>
+                    <ul>
                         <li>Building new, modernized website.</li>
                         <li>Gathered requirements from foundation members</li>
                     </ul>
-                    <p class="fs-5"><span class="text-decoration-underline">Tools & Platforms</span>: HTML, CSS, JavaScript, jQuery, Bootstrap 5, Swiper, VS Code</p>
+                    <p><span class="text-decoration-underline">Tools & Platforms</span>: HTML, CSS, JavaScript, jQuery, Bootstrap 5, Swiper, VS Code</p>
                 </div>
             </div>
             
-            <div class="container-fluid d-flex ms-5" id="update-example-container">
+            <div class="container-fluid d-flex" id="update-example-container">
                 <img class="img-fluid shadow-lg" id="goggio-old" src="images/goggio_old.png" alt="old_website">
-                <div class="d-flex flex-column mt-5" id="arrows">
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle arrow-icons">
+                <div class="d-flex flex-column" id="arrows">
+                    <div class="page-scroll">
+                        <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
                             <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
                             <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
                         </div>
                     </div>
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle arrow-icons">
+                    <div class="page-scroll">
+                        <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
                             <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
                             <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
                         </div>
                     </div>
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle arrow-icons">
-                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
-                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
-                        </div>
-                    </div>
-                    <div class="page-scroll text-center h-25">
-                        <div class="btn btn-circle arrow-icons">
+                    <div class="page-scroll">
+                        <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
                             <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
                             <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
                         </div>
@@ -155,38 +149,46 @@
     </div>
 
     <!-- PROJECT EXPERIENCE (Not responsive) -->
-    <div class="container-fluid ps-5" id="project-exp">
-        <h1 class="ps-5">Project Experience</h1>
-        <div class="d-flex ms-5 pt-5" id="projects">
-            <div class="project pe-5 w-50" id="synchrolean">
+    <div class="container-fluid mt-5 border-top border-2 pt-5" id="project-exp">
+        <h1>Project Experience</h1>
+        <div class="d-flex" id="projects">
+            <div class="project w-50" id="synchrolean">
                 <h3>Capstone Project: Lean Portland</h3>
-                <p><span class="fst-italic fs-4">Created SynchroLean, a team and task management application. Application was developed for the Vancouver Clinic to modernize their workflow management system.</span></p>
-                <p class="fs-5">April 2018 - August 2018</p>
+                <p><span class="fst-italic ">Created SynchroLean, a team and task management application. Application was developed for the Vancouver Clinic to modernize their workflow management system.</span></p>
+                <p>April 2018 - August 2018</p>
                 <ul>
-                    <li class="fs-5">Successfully delivered program on time while meeting all requirements including a database, server, mobile, web application with easy to use UI.</li>
-                    <li class="fs-5">Independently researched required domain knowledge. </li>
-                    <li class="fs-5">Created account model for storing user data and the account web API for the server. Finalized edit account capability; created change team owner, remove team member, leave team, delete team, and compile team metrics functionalities for the web-app.</li>
-                    <li class="fs-5">Designed and built an automated graphing page which tracked team metrics for user-defined lengths of time.</li>
+                    <li>
+                        Successfully delivered program on time while meeting all requirements including a database, server, mobile, web application with easy to use UI.
+                    </li>
+                    <li>
+                        Independently researched required domain knowledge. 
+                    </li>
+                    <li>
+                        Created account model for storing user data and the account web API for the server. Finalized edit account capability; created change team owner, remove team member, leave team, delete team, and compile team metrics functionalities for the web-app.
+                    </li>
+                    <li>
+                        Designed and built an automated graphing page which tracked team metrics for user-defined lengths of time.
+                    </li>
                 </ul>
-                <p class="fs-5"><span class="text-decoration-underline">Tools & Platforms</span>: C#, Typescript, ASP.NET Core 2.0, Angular 6, SQLite, VS Code</p>
+                <p><span class="text-decoration-underline">Tools & Platforms</span>: C#, Typescript, ASP.NET Core 2.0, Angular 6, SQLite, VS Code</p>
             </div>
-            <div class="project" id="meme">
+            <div class="project border-top pt-5" id="meme">
                 <h3>Full Stack Web Development Class Project</h3>
-                <p><span class="fst-italic fs-4">Web-based meme generator</span></p>
-                <p class="fs-5">October 2018 - December 2018</p>
+                <p><span class="fst-italic ">Web-based meme generator</span></p>
+                <p>October 2018 - December 2018</p>
                 <ul>
-                    <li class="fs-5">Developed a web-based program that allows users to create and like/dislike memes.</li>
+                    <li>Developed a web-based program that allows users to create and like/dislike memes.</li>
                 </ul>
-                <p class="fs-5"><span class="text-decoration-underline">Tools & Platforms</span>: JavaScript, TypeScript, MongoDB, Express, Angular 6, Node.js, VS Code</p>
+                <p><span class="text-decoration-underline">Tools & Platforms</span>: JavaScript, TypeScript, MongoDB, Express, Angular 6, Node.js, VS Code</p>
             </div>
         </div>
     </div>
 
     <!-- EDUCATION -->
-    <div class="container-fluid ps-5" id="education">
-        <h1 class="ps-5">Education</h1>
-        <div class="d-flex pt-5 ms-5" id="schools">
-            <div class="school fs-5 w-50" id="psu">
+    <div class="container-fluid mt-5 border-top border-2 pt-5" id="education">
+        <h1>Education</h1>
+        <div class="d-flex" id="schools">
+            <div class="school w-50" id="psu">
                 <h3>Portland State University</h3>
                 <p>Portland, Oregon</p>
                 <p>September 2016 - December 2018</p>
@@ -195,7 +197,7 @@
                     <img class="mt-5 img-fluid" src="images/psu.svg" alt="psu_logo">
                 </a>
             </div>
-            <div class="school fs-5" id="pcc">
+            <div class="school " id="pcc">
                 <h3>Portland Community College</h3>
                 <p>Portland, Oregon</p>
                 <p>January 2014 - June 2016</p>
@@ -207,9 +209,9 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="container-fluid pt-5 ps-5" id="contact">
-        <h1 class="ps-5">Contact</h1>
-        <div class="p-5 d-flex flex-column fs-5">
+    <div class="container-fluid mt-5 py-5" id="contact">
+        <h1>Contact</h1>
+        <div class="d-flex flex-column">
             <p>Phone: (925) 212-2946</p>
             <p>Email: colephares@gmail.com</p>
             <div class="d-flex">

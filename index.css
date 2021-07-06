@@ -3,10 +3,34 @@
     padding: 0;
 }
 
+html {
+    font-family: monospace;
+}
+
+@media (max-width: 448px) {
+    #med-nav-button-menu {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 15px !important;
+    }
+
+    #intro-img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
 @media (max-width: 644px) {
     #large-nav {
         display: none;
     }
+
     #med-nav-menu {
         position: absolute !important;
         background-color: #c01900;
@@ -54,6 +78,7 @@
 
 nav {
     background-color: #162B32;
+    width: 100%;
 }
 
 #menu {
@@ -105,7 +130,6 @@ h1 {
     }
 
     #intro-img {
-        min-width: 400px;
         width: 60%;
         height: auto;
         margin: auto !important;
@@ -131,29 +155,23 @@ h1 {
 
 /* rotating hero picture */
 #intro img {
-    max-width: 100%;
-    height: auto;
     transform: rotate(-13deg);
     -ms-transform: rotate(-13deg);
     -moz-transform: rotate(-13deg);
     -webkit-transform: rotate(-13deg);
     -o-transform: rotate(-13deg);
-}
-
-#intro img:hover {
-    transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
 }
 
-#professional-exp, #project-exp, #education {
-    padding-top: 150px !important;
+#intro img:hover {
+    transform: rotate(-1800deg);
+    -ms-transform: rotate(-1800deg);
+    -moz-transform: rotate(-1800deg);
+    -webkit-transform: rotate(-1800deg);
+    -o-transform: rotate(-1800deg);
 }
 
 #goggio-old {
@@ -188,6 +206,10 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-timing-function: linear;
+}
+
+.page-scroll i {
+    color: #162B32;
 }
 
 @keyframes pulse {
@@ -283,8 +305,6 @@ h1 {
 @media (min-width: 992px) {
     .arrows-down {
         display: none !important;
-        /* width: auto !important;
-        height: 100% !important; */
     }
 }
 
@@ -357,6 +377,10 @@ h1 {
     #pcc {
         margin-top: 50px !important;
     }
+}
+
+#project-exp, #education {
+    border-color: #162B32 !important;
 }
 
 #contact {

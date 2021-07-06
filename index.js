@@ -12,7 +12,6 @@ $(document).ready(function() {
     var mediumNav = $("#med-nav-menu")
     mediumNav.hide()
 
-
     var toggle = false
     var toggleMed = false
 
