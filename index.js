@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var menuTitle = $("#menuTitle")
+    var menuTitle = $("#menu-title")
     var links = $("#links")
     links.hide()
     var bars = $("#bars-lg")
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     $("#hamburger-lg").on("click", function() {
         // Changes width of menu bar
-        var menuWidth = $("#menu").width() == 700 ? "100px" : "700px";
+        var menuWidth = $("#menu").width() == 500 ? "100px" : "500px";
         $("#menu").animate({ width: menuWidth });
 
         // TOGGLES HAMBURGER ICONS AND MENU ELEMENTS

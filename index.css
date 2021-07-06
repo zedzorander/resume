@@ -12,6 +12,7 @@ html {
     background-color: #c01900;
 }
 
+/* No menu for small screens */
 @media (max-width: 575px) {
     #med-nav-button-menu {
         display: none !important;
@@ -41,13 +42,8 @@ html {
     }
 }
 
-@media (min-width: 1123px) {
-    #med-nav {
-        display: none;
-    }
-}
-
-@media (max-width: 1122px) and (min-width: 768px) {
+/* med-nav for medium to large breakpoints */
+@media (max-width: 1199px) and (min-width: 768px) {
     #large-nav {
         display: none;
     }
@@ -65,6 +61,13 @@ html {
         color: #162B32;
         font-weight: bold;
         padding: 0 15px;
+    }
+}
+
+/* Remove med-nav for large screens */
+@media (min-width: 1200px) {
+    #med-nav {
+        display: none;
     }
 }
 
@@ -86,11 +89,6 @@ nav {
     background-color: #c01900;
     width: 50px;
     height: 50px;
-}
-
-#hamburger-med {
-    float: right;
-    position: relative !important;
 }
 
 #bars-lg, #bars-med,
