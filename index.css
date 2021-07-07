@@ -11,6 +11,68 @@ h1 {
     text-decoration: underline;
 }
 
+nav {
+    background-color: #162B32;
+    width: 100%;
+}
+
+#menu {
+    background-color: #c01900;
+    width: 100px;
+    height: 50px;
+    color: #162B32;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#hamburger-lg, #hamburger-med {
+    background-color: #c01900;
+    width: 50px;
+    height: 50px;
+}
+
+#bars-lg, #bars-med,
+#times-lg, #times-med {
+    color: #162B32;
+}
+
+#links a {
+    margin-inline: 15px;
+    text-decoration: none;
+    color: #162B32;
+}
+
+#links a:hover {
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#med-nav-menu a:hover {
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/* font sizes of all text */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h3 {
+        font-size: 30px !important;
+    }
+
+    p, li, 
+    a:not(#med-nav-items):not(a), 
+    a:not(#links):not(a) {
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    p, li {
+        font-size: 25px !important;
+    }
+}
+
 #med-nav-menu {
     position: absolute !important;
     background-color: #c01900;
@@ -75,45 +137,6 @@ h1 {
     }
 }
 
-nav {
-    background-color: #162B32;
-    width: 100%;
-}
-
-#menu {
-    background-color: #c01900;
-    width: 100px;
-    height: 50px;
-    color: #162B32;
-    overflow: hidden;
-    font-weight: bold;
-}
-
-#hamburger-lg, #hamburger-med {
-    background-color: #c01900;
-    width: 50px;
-    height: 50px;
-}
-
-#bars-lg, #bars-med,
-#times-lg, #times-med {
-    color: #162B32;
-}
-
-#links a {
-    margin-inline: 15px;
-    text-decoration: none;
-    color: #162B32;
-}
-
-#links a:hover {
-    text-shadow: 0px 0px 5px #fff;
-}
-
-#med-nav-menu a:hover {
-    text-shadow: 0px 0px 5px #fff;
-}
-
 #hero {
     background-color: #162B32;
     color: #fff;
@@ -170,14 +193,6 @@ nav {
     #summary {
         margin-left: 50px;
     }
-
-    #name {
-        font-size: 40px !important;
-    }
-
-    #description {
-        font-size: 20px !important;
-    }
 }
 
 /* hero section extra large breakpoint */
@@ -185,20 +200,6 @@ nav {
     #summary {
         margin: 0 100px;
     }
-
-    #description {
-        font-size: 25px !important;
-    }
-}
-
-#goggio-old {
-    width: 30%;
-    height: auto;
-}
-
-#goggio-new {
-    width: 50%;
-    height: auto;
 }
 
 /* pulsing arrows */
@@ -280,30 +281,9 @@ nav {
     }
 }
 
-@media (max-width: 1342px) and (min-width: 992px) {
-    #prof-div {
-        display: block !important;
-    }
-
-    #jobs-wrapper {
-        align-items: left !important;
-        width: 100% !important;
-    }
-
-    #goggio-old {
-        width: 30% !important;
-        height: auto !important;
-    }
-
-    #goggio-new {
-        width: 50% !important;
-        height: auto !important;
-    }
-}
-
 .btn-circle {
-    width: 90px;
-    height: 90px;
+    width: 100%;
+    height: auto;
     border-radius: 60px;
     font-size: 40px;
     color: rgba(255, 255, 255, 0.6);
@@ -319,12 +299,7 @@ nav {
     cursor: default;
 }
 
-@media (min-width: 992px) {
-    .arrows-down {
-        display: none !important;
-    }
-}
-
+/* professional-exp for medium to small breakpoints */
 @media (max-width: 991px) {
     .arrows-right {
         display: none !important;
@@ -352,19 +327,29 @@ nav {
         width: 100% !important;
     }
 
-    #update-example-container {
+    #update-example {
         display: block !important;
         margin-left: 0 !important;
     }
+}
 
-    #goggio-old {
-        max-height: 10%;
-        width: auto;
+/* professional-exp for large breakpoint */
+@media (min-width: 992px) {
+    #jobs-wrapper {
+        display: inline-flex !important;
     }
 
-    #goggio-new {
-        max-height: 10%;
-        width: auto;
+    #arrows {
+        display: grid !important;
+        align-items: center !important;
+    }
+    
+    .arrows-down {
+        display: none !important;
+    }
+
+    #update-example-container {
+        display: inline-flex !important;
     }
 }
 
@@ -396,8 +381,20 @@ nav {
     }
 }
 
+/* project-exp for extra large breakpoint */
+@media (min-width: 1200px) {
+    #synchrolean, #meme {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    #synchrolean {
+        border-right: 1px solid #162B32;
+    }
+}
+
 #project-exp, #education {
-    border-color: #162B32 !important;
+    border-top: 2px solid #162B32 !important;
 }
 
 #contact {

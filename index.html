@@ -100,12 +100,12 @@
         </div>
     </div>
 
-    <!-- PROFESSIONAL EXPERIENCE -->
+    <!-- PROFESSIONAL EXPERIENCE (complete) -->
     <div class="container-fluid mt-5" id="professional-exp">
         <h1>Professional Experience</h1>
-        <div class="d-flex" id="prof-div">
-            <div class="container d-flex align-items-center w-50" id="jobs-wrapper">
-                <div id="jobs">
+        <div class="d-md-flex" id="prof-div">
+            <div class="container-fluid" id="jobs-wrapper">
+                <div id="job">
                     <h3>Web Developer</h3>
                     <a href="http://www.goggiofoundation.org/" target="_blank" rel="noopener noreferrer"><span class="fst-italic ">Goggio Family Foundation</span></a>
                     <p>May 2021 - Present</p>
@@ -115,40 +115,47 @@
                     </ul>
                     <p><span class="text-decoration-underline">Tools & Platforms</span>: HTML, CSS, JavaScript, jQuery, Bootstrap 5, Swiper, VS Code</p>
                 </div>
-            </div>
-            
-            <div class="container d-flex" id="update-example-container">
-                <img class="img-fluid shadow-lg" id="goggio-old" src="images/goggio_old.png" alt="old_website">
-                <div class="d-flex flex-column" id="arrows">
-                    <div class="page-scroll">
-                        <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
-                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
-                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
+                <div class="container d-flex" id="update-example">
+                    <div class="container-fluid" id="update-example-container">
+                        <div id="goggio-old-div">
+                            <img class="img-fluid shadow-lg" id="goggio-old" src="images/goggio_old.png" alt="old_website">
                         </div>
-                    </div>
-                    <div class="page-scroll">
-                        <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
-                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
-                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
+                        <div class="d-flex justify-content-evenly" id="arrows">
+                            <div class="page-scroll">
+                                <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
+                                    <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
+                                    <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
+                                </div>
+                            </div>
+                            <div class="page-scroll">
+                                <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
+                                    <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
+                                    <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
+                                </div>
+                            </div>
+                            <div class="page-scroll">
+                                <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
+                                    <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
+                                    <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="page-scroll">
-                        <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
-                            <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
-                            <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
+                        <div>
+                            <img class="img-fluid shadow-lg" id="goggio-new" src="images/goggio_new.png" alt="new_website">
                         </div>
                     </div>
                 </div>
-                <img class="img-fluid shadow-lg" id="goggio-new" src="images/goggio_new.png" alt="new_website">
             </div>
+            
+            
         </div>
     </div>
 
     <!-- PROJECT EXPERIENCE (Not responsive) -->
     <div class="container-fluid mt-5 border-top border-2 pt-5" id="project-exp">
         <h1>Project Experience</h1>
-        <div class="d-flex" id="projects">
-            <div class="project w-50" id="synchrolean">
+        <div class="d-xl-flex" id="projects">
+            <div class="project" id="synchrolean">
                 <h3>Capstone Project: Lean Portland</h3>
                 <p><span class="fst-italic ">Created SynchroLean, a team and task management application. Application was developed for the Vancouver Clinic to modernize their workflow management system.</span></p>
                 <p>April 2018 - August 2018</p>
@@ -168,7 +175,7 @@
                 </ul>
                 <p><span class="text-decoration-underline">Tools & Platforms</span>: C#, Typescript, ASP.NET Core 2.0, Angular 6, SQLite, VS Code</p>
             </div>
-            <div class="project border-top pt-5" id="meme">
+            <div class="project pt-5" id="meme">
                 <h3>Full Stack Web Development Class Project</h3>
                 <p><span class="fst-italic ">Web-based meme generator</span></p>
                 <p>October 2018 - December 2018</p>
