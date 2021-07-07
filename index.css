@@ -60,9 +60,7 @@ nav {
         font-size: 30px !important;
     }
 
-    p, li, 
-    a:not(#med-nav-items):not(a), 
-    a:not(#links):not(a) {
+    p, li, #job a {
         font-size: 20px !important;
     }
 }
@@ -353,6 +351,7 @@ nav {
     }
 }
 
+/* project-exp for medium and smaller breakpoints */
 @media (max-width: 991px) {
     #projects {
         display: block !important;
@@ -364,20 +363,7 @@ nav {
 
     #meme {
         margin-top: 50px !important;
-    }
-}
-
-@media (max-width: 832px) {
-    #schools {
-        display: block !important;
-    }
-
-    #psu, #pcc {
-        width: 85% !important;
-    }
-
-    #pcc {
-        margin-top: 50px !important;
+        border-top: 1px solid #162B32;
     }
 }
 
@@ -394,7 +380,38 @@ nav {
 }
 
 #project-exp, #education {
-    border-top: 2px solid #162B32 !important;
+    border-top: 3px solid #162B32 !important;
+}
+
+.school-logo {
+    width: 50%;
+    height: auto;
+}
+
+/* education for large and smaller breakpoint */
+@media (max-width: 991px) {
+    .school-logo {
+        width: 25%;
+        height: auto;
+    }
+
+    #pcc {
+        border-top: 1px solid #162B32;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+}
+
+/* education for large breakpoint */
+@media (min-width: 992px) {
+    #psu, #pcc {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    #psu {
+        border-right: 1px solid #162B32;
+    }
 }
 
 #contact {
