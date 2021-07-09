@@ -60,6 +60,10 @@ nav {
         font-size: 30px !important;
     }
 
+    h5 {
+        font-size: 25px !important;
+    }
+
     p, li, #job a {
         font-size: 20px !important;
     }
@@ -351,6 +355,22 @@ nav {
     }
 }
 
+#professional-exp {
+    background: linear-gradient(#162B32, gray);
+    color: #fff;
+}
+
+#skills {
+    background: linear-gradient(gray, #fff);
+}
+
+/* skills for small and larger breakpoints */
+@media (min-width: 576px) {
+    #skills h1 {
+        text-align: center;
+    }
+}
+
 /* project-exp for medium and smaller breakpoints */
 @media (max-width: 991px) {
     #projects {
@@ -416,7 +436,6 @@ nav {
 
 #contact {
     background-color: #162B32;
-    margin-top: 5%;
     color: #c01900;
 }
 
