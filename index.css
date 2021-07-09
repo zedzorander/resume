@@ -283,6 +283,10 @@ nav {
     }
 }
 
+.btn i {
+    color: #fff;
+}
+
 .btn-circle {
     width: 100%;
     height: auto;
@@ -399,7 +403,7 @@ nav {
     }
 }
 
-#project-exp, #education {
+#skills, #project-exp, #education {
     border-top: 3px solid #162B32 !important;
 }
 
