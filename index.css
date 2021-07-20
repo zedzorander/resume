@@ -117,7 +117,7 @@ nav {
     }
     
     #med-nav-menu {
-        transform: translate(-168px, 70px);
+        transform: translate(-145px, 70px);
     }
 
     #med-nav-items {
@@ -366,6 +366,7 @@ nav {
 
 #skills {
     background: linear-gradient(gray, #fff);
+    border-top: 3px solid #fff !important;
 }
 
 /* skills for small and larger breakpoints */
@@ -403,7 +404,7 @@ nav {
     }
 }
 
-#skills, #project-exp, #education {
+#project-exp, #education {
     border-top: 3px solid #162B32 !important;
 }
 
