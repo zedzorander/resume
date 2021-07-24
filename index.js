@@ -1,3 +1,10 @@
+/*
+Author: Cole Phares
+Creation Date: June 26, 2021
+Last Modified: July 24, 2021
+Description: JavaScript/jQuery for my portfolio website
+*/
+
 $(document).ready(function() {
     var menuTitle = $("#menu-title")
     var links = $("#links")

@@ -1,3 +1,10 @@
+/*
+Author: Cole Phares
+Creation Date: June 26, 2021
+Last Modified: July 24, 2021
+Description: CSS for my portfolio website
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -364,14 +371,13 @@ nav {
     color: #fff;
 }
 
-#skills {
+#skills-certs {
     background: linear-gradient(gray, #fff);
-    border-top: 3px solid #fff !important;
 }
 
-/* skills for small and larger breakpoints */
+/* skills-certs for small and larger breakpoints */
 @media (min-width: 576px) {
-    #skills h1 {
+    #skills-certs h1 {
         text-align: center;
     }
 }
@@ -404,7 +410,7 @@ nav {
     }
 }
 
-#project-exp, #education {
+#skills-certs, #project-exp, #education {
     border-top: 3px solid #162B32 !important;
 }
 
