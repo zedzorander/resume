@@ -1,7 +1,7 @@
 /*
 Author: Cole Phares
 Creation Date: June 26, 2021
-Last Modified: July 24, 2021
+Last Modified: August 9, 2021
 Description: CSS for my portfolio website
 */
 
@@ -447,6 +447,10 @@ nav {
 
 #contact {
     background-color: #162B32;
+    color: #c01900;
+}
+
+#email {
     color: #c01900;
 }
 
