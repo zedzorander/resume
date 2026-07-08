@@ -1,295 +1,636 @@
 <!--
 Author: Cole Phares
 Creation Date: June 26, 2021
-Last Modified: August 9, 2021
+Last Modified: July 8, 2026
 Description: Portfolio website for me
 -->
 
-<!DOCTYPE html>
+<!-- Web Address -->
+<!-- https://master.d31q4gyspf5adf.amplifyapp.com/ -->
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/initials_resized.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Resume — Cole Phares</title>
 
-    <!-- Web Address -->
-    <!-- https://master.d31q4gyspf5adf.amplifyapp.com/ -->
+  </head>
+  <body class="w-full bg-[#021112]">
+    <div class="w-full pt-8 px-42">
 
-</head>
-<body>
-    <!-- NAVIGATION < 1122px -->
-    <nav class="navbar sticky-top" id="med-nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/signature.png" alt="signature">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="d-flex flex-column" id="med-nav-button-menu">
-                <div class="d-flex justify-content-center rounded" id="hamburger-med">
-                    <a class="btn d-flex align-items-center">
-                        <i class="fas fa-bars fa-2x" id="bars-med"></i>
-                        <i class="fas fa-times fa-2x" id="times-med"></i>
-                    </a>
-                    <div class="rounded" id="med-nav-menu">
-                        <div class="d-flex flex-column text-center" id="med-nav-items">
-                            <a href="#professional-exp">Professional Experience</a>
-                            <a href="#skills">Skills</a>
-                            <a href="#project-exp">Projects</a>
-                            <a href="#education">Education</a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Header -->
+        <div class="w-full inline-flex justify-between">
+            <p class="header-text text-4xl font-['Manrope']">
+                CP
+            </p>
+            <div class="w-auto flex items-center gap-32">
+                <a href="#skills" class="body-text text-lg font-['Inter']">
+                    Skills
+                </a>
+                <a href="#professional_experience" class="body-text text-lg font-['Inter']">
+                    Professional Experience
+                </a>
+                <a href="#education" class="body-text text-lg font-['Inter']">
+                    Education
+                </a>
+                <a href="#professional_development" class="body-text text-lg font-['Inter']">
+                    Professional Development
+                </a>
             </div>
         </div>
-    </nav>
 
-    <!-- NAVIGATION > 1122px -->
-    <nav class="navbar sticky-top navbar-expand-lg" id="large-nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" id="brand">
-                <img src="images/signature.png" alt="signature" >
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="d-flex">
-                <div class="d-flex justify-content-center align-items-center rounded me-3" id="menu">
-                    <div class="fs-3" id="menu-title">Menu</div>
-                    <div id="links">
-                        <div class="d-flex">
-                            <a href="#professional-exp">Professional Experience</a>
-                            <a href="#skills">Skills</a>
-                            <a href="#project-exp">Projects</a>
-                            <a href="#education">Education</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center rounded" id="hamburger-lg">
-                    <a class="btn d-flex align-items-center">
-                        <i class="fas fa-bars fa-2x" id="bars-lg"></i>
-                        <i class="fas fa-times fa-2x" id="times-lg"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero section -->
-    <div class="container-fluid d-md-flex align-items-center pb-3" id="hero">
-        <div class="d-md-flex w-50 justify-content-center" id="hero-img">
-            <img class="my-5 img-fluid" src="images/bench1.jpg" alt="coder_dude">
-        </div>
-        <div class="container" id="summary">
-            <div class="row">
-                <div class="col text-end">
-                    <h1 id="name">Cole Phares</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p class="text-end" id="description">
-                        Software engineer who blends technical training with outstanding communication skills, team focus, and a strong work ethic. Creative thinker and versatile problem solver looking to provide business solutions to real world problems. Committed to continuous learning and deepening technical expertise.
+        <!-- Hero & About Me Section -->
+        <div class="mt-14">
+            <!-- Hero Section -->
+            <div class="w-full py-6 inline-flex justify-between">
+                <div class="pl-24 mt-14">
+                    <p class="header-text text-9xl font-['Manrope']">
+                        Cole Phares
+                    </p>
+                    <p class="body-text text-4xl font-['Manrope']">
+                        Software Engineer
                     </p>
                 </div>
+                <div class="w-[500px] h-[650px] px-20 py-20 relative flex justify-start items-center gap-2.5">
+                    <div class="w-[500px] h-[650px] left-0 top-0 absolute bg-radial from-cyan-50/20 via-cyan-50/20 to-cyan-50/0 rounded-full blur-xl"></div>
+                    <img class="w-80 h-[502px] grayscale rounded-xl" src="./images/website photo.jpg" />
+                </div>
+            </div>
+            
+            <!-- About Me Section -->
+            <div class="w-full pl-24 pr-12 inline-flex flex-col justify-start items-start gap-14">
+                <p class="header-text text-6xl font-['Manrope']">
+                    About Me
+                </p>
+                <p class="body-text text-lg font-['Inter']">
+                    Software engineer who blends technical training with outstanding
+                    communication skills, team focus, and a strong work ethic. Creative
+                    thinker and versatile problem solver looking to provide business
+                    solutions to real world problems. Committed to continuous learning and
+                    deepening technical expertise.
+                </p>
+                <button class="hover:cursor-pointer px-16 py-5 button-bg-color rounded-xl shadow-[0px_8px_24px_0px_rgba(26,171,182,0.25)] shadow-[0px_2px_4px_0px_rgba(26,171,182,1.00)] body-text text-lg font-['Inter']">
+                    <a href="resume/Cole Phares Software Engineer Resume.docx" download>Download Resume/CV</a>
+                </button>
             </div>
         </div>
-    </div>
-
-    <!-- PROFESSIONAL EXPERIENCE -->
-    <div class="container-fluid py-5" id="professional-exp">
-        <h1 class="pt-5">Professional Experience</h1>
-        <div class="d-md-flex" id="prof-div">
-            <div class="container-fluid" id="jobs-wrapper">
-                <div id="job">
-                    <h3>Web Developer</h3>
-                    <a href="http://www.goggiofoundation.org/" target="_blank" rel="noopener noreferrer"><span class="fst-italic ">Goggio Family Foundation</span></a>
-                    <p>May 2021 - Present</p>
-                    <ul>
-                        <li>Building new, modernized website.</li>
-                        <li>Gathered requirements from foundation members</li>
-                    </ul>
-                    <p><span class="text-decoration-underline">Tools & Platforms</span>: HTML, CSS, JavaScript, jQuery, Bootstrap 5, Swiper, VS Code</p>
+      
+        <!-- Skills Section -->
+        <div id="skills">
+            <p class="mt-28 header-text text-6xl font-['Manrope']">
+                Skills = [
+            </p>
+            <div class="w-full pl-24">
+    
+                <!-- Front-End Development Skills Section -->
+                <div class="w-full mt-14">
+                    <div class="body-text text-2xl font-['Manrope']">
+                        Front-End Development
+                    </div>
+                    <div class="mt-7 inline-flex flex-wrap gap-10">
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            JavaScript
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Vue.js
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            HTML
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            CSS
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Bootstrap
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Tailwind
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Laravel
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            jQuery
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            TypeScript
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Angular
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            npm
+                        </div>
+                    </div>
                 </div>
-                <div class="container d-flex" id="update-example">
-                    <div class="container-fluid" id="update-example-container">
-                        <div id="goggio-old-div">
-                            <img class="img-fluid shadow-lg" id="goggio-old" src="images/goggio_old.png" alt="old_website">
+    
+                <!-- Back-End Development Skills Section -->
+                <div class="w-full mt-14">
+                    <div class="body-text text-2xl font-['Manrope']">
+                        Back-End Development
+                    </div>
+                    <div class="mt-7 inline-flex flex-wrap gap-10">
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            PHP
                         </div>
-                        <div class="d-flex justify-content-evenly" id="arrows">
-                            <div class="page-scroll">
-                                <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
-                                    <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
-                                    <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
-                                </div>
-                            </div>
-                            <div class="page-scroll">
-                                <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
-                                    <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
-                                    <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
-                                </div>
-                            </div>
-                            <div class="page-scroll">
-                                <div class="d-flex align-items-center justify-content-center btn btn-circle arrow-icons">
-                                    <i class="fas fa-angle-double-right fa-2x animated arrows-right"></i>
-                                    <i class="fas fa-angle-double-down fa-2x animated arrows-down"></i>
-                                </div>
-                            </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Java
                         </div>
-                        <div>
-                            <img class="img-fluid shadow-lg" id="goggio-new" src="images/goggio_new.png" alt="new_website">
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Node.js
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Laravel
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            C
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            C++
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            ASP.Net Core 2
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Database & Search Technologies Skills Section -->
+                <div class="w-full mt-14">
+                    <div class="body-text text-2xl font-['Manrope']">
+                        Database & Search Technologies
+                    </div>
+                    <div class="mt-7 inline-flex flex-wrap gap-10">
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            SQL
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            MySQL
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            ElasticSearch
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            SphinxSearch
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- DevOps & Infrastructure & Cloud Services Skills Section -->
+                <div class="w-full mt-14">
+                    <div class="body-text text-2xl font-['Manrope']">
+                        DevOps & Infrastructure & Cloud Services
+                    </div>
+                    <div class="mt-7 inline-flex flex-wrap gap-10">
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Docker
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Jira
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            AWS S3
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Functional Skills Section -->
+                <div class="w-full mt-14">
+                    <div class="body-text text-2xl font-['Manrope']">
+                        Functional
+                    </div>
+                    <div class="mt-7 inline-flex flex-wrap gap-10">
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            VSCode
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            GitLab
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Unit Testing
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Integration Testing
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Debugging
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Workflow Automation
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Restful APIs
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            UI/UX Improvement
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Cloud Infrastructure
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Agile Sprints/Stand-Ups
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Test Automation
+                        </div>
+                        <div class="w-auto py-1 px-6 rounded-3xl border border-[#365B5D] bg-[#112526] text-[#E9FCFE] text-lg font-['Inter']">
+                            Git Workflow
                         </div>
                     </div>
                 </div>
             </div>
+            <p class="mt-14 header-text text-6xl font-['Manrope']">
+                ];
+            </p>
         </div>
+
+        <!-- Professional Experience Section -->
+        <div id="professional_experience">
+            <p class="mt-28 header-text text-6xl font-['Manrope']">
+                Professional Experience =[
+            </p>
+            <div class="w-full mt-14 flex-col justify-start items-start">
+                
+                <!-- Void3 -->
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo Effect -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col gap-12">
+                            <div class="flex flex-col">
+                                <div class="inline-flex justify-between items-end">
+                                    <p class="body-text text-2xl font-['Manrope']">
+                                        Software Engineer III
+                                    </p>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        July 2026 - Present
+                                    </p>
+                                </div>
+                                <p class="body-text text-lg font-['Inter']">
+                                    Void3
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-3.5">
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Guided AI coding agents to implement features, generate code, and automate repetitive development tasks.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class=" p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Evaluated feature implementations from a system-wide perspective, identifying integration issues and recommending improvements to overall application design.
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="body-text text-lg font-['Inter']" >
+                                Tools and Platforms: Redacted
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Natural Baby Company -->
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col gap-12">
+                            <div class="flex flex-col">
+                                <div class="inline-flex justify-between items-end">
+                                    <p class="body-text text-2xl font-['Manrope']">
+                                        Software Engineer (Contractor)
+                                    </p>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Feb. 2026
+                                    </p>
+                                </div>
+                                <p class="body-text text-lg font-['Inter']">
+                                    The Natural Baby Company
+                                </p>
+                            </div>
+                            <div class="inline-flex">
+                                <div class="p-2.5 flex items-center gap-2.5">
+                                    <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                </div>
+                                <p class="body-text text-lg font-['Inter']">
+                                    Resolved DNS TXT Record configuration issues to enable reliable third-party email delivery.
+                                </p>
+                            </div>
+                            <p class="body-text text-lg font-['Inter']">
+                                Tools and Platforms: GoDaddy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fore! Corners Golf -->
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col gap-12">
+                            <div class="flex flex-col">
+                                <div class="inline-flex justify-between items-end">
+                                    <p class="body-text text-2xl font-['Manrope']">
+                                        Software Engineer (Contractor)
+                                    </p>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Nov. 2025
+                                    </p>
+                                </div>
+                                <p class="body-text text-lg font-['Inter']">
+                                    Fore! Corners Golf
+                                </p>
+                            </div>
+                            <div class="inline-flex">
+                                <div class="p-2.5 flex items-center gap-2.5">
+                                    <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                </div>
+                                <p class="body-text text-lg font-['Inter']">
+                                    Integrated a third-party scheduling system into a Wordpress website.
+                                </p>
+                            </div>
+                            <p class="body-text text-lg font-['Inter']">
+                                Tools and Platforms: Wordpress, Amelia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ViralHog LLC -->
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col gap-12">
+                            <div class="flex flex-col">
+                                <div class="inline-flex justify-between items-end">
+                                    <p class="body-text text-2xl font-['Manrope']">
+                                        Software Engineer I
+                                    </p>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Nov. 2021 - Sept. 2025
+                                    </p>
+                                </div>
+                                <p class="body-text text-lg font-['Inter']">
+                                    ViralHog LLC
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-3.5">
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Updated new client website by converting Figma design files to HTML with Tailwind into a Laravel project.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Decreased manual review of billing workflow pages through a revamp powered by Vue.js.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Redesigned business partner information page to improve intuitiveness and strengthen data storage capabilities.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Added navigation button to licensee portal video library; helped mobile users view headings through site improvements.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Introduced early detection bug testing for monolithic PHP and Laravel applications.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Created functionality enabling file uploads to AWS S3 buckets in JavaScript.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Built front-end and back-end features as part of full stack LAMP development.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Wrote automated script requesting Trustpilot and other reviews, teaming with cross-functional staff. Added notes section to document data such as customer contact information and type of review left.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Built new company website after learning Laravel, replacing a legacy codebase developed in PHP with no framework.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']" >
+                                        Proposed and secured approval to introduce a new video submission and user onboarding workflow.
+                                    </p>
+                                </div>
+                                <div class="inline-flex">
+                                    <div class="p-2.5 flex items-center gap-2.5">
+                                        <div class="size-[5px] bg-[#E9FCFE] rounded-full"></div>
+                                    </div>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Built and integrated the company’s first unit test suite, enabling automated testing and improving development workflows
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="self-stretch justify-start body-text text-lg font-['Inter']">
+                                Tools and Platforms: HTML, CSS, JavaScript, jQuery, Vue.js 2, Bootstrap 4, PHP7, VSCodium, MySQL, Vagrant, AWS, GitLab, Apache2, Ubuntu, PHPUnit
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-14 header-text text-6xl font-['Manrope']">
+                ];
+            </p>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education">
+            <p class="mt-28 header-text text-6xl font-['Manrope']">
+                Education = [
+            </p>
+            <div class="w-full mt-14 flex-col justify-start items-start">
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col">
+                            <div class="flex flex-col">
+                                <div class="inline-flex justify-between items-end">
+                                    <p class="body-text text-2xl font-['Manrope']">
+                                        Portland State University
+                                    </p>
+                                    <p class="body-text text-lg font-['Inter']">
+                                        Sept. 2016 - Dec. 2018
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="body-text text-lg font-['Inter']">
+                                Bachelor’s of Science, Computer Science
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col">
+                            <div class="inline-flex justify-between items-end">
+                                <p class="body-text text-2xl font-['Manrope']">
+                                    Portland Community College
+                                </p>
+                                <p class="body-text text-lg font-['Inter']">
+                                    Jan. 2014 - June 2016
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-14 header-text text-6xl font-['Manrope']">
+                ];
+            </p>
+        </div>
+      
+        <!-- Professional Development Section -->
+        <div id="professional_development">
+            <p class="mt-28 header-text text-6xl font-['Manrope']">
+                Professional Development = [
+            </p>
+            <div class="w-full mt-14 flex-col justify-start items-start">
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col">
+                        <div class="self-stretch inline-flex justify-between items-end">
+                            <p class="w-[672px] justify-start body-text text-2xl font-['Manrope']">
+                            UX/UI Web Design in Figma | Advanced Level | Eng – Udemy
+                            </p>
+                        </div>
+                        <p class="self-stretch justify-start body-text text-lg font-['Inter']">
+                            Certificate of Completion URL: <a href="https://www.udemy.com/certificate/UC-14f85c41-fdad-47d2-9717-8773bdad3258/" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">https://www.udemy.com/certificate/UC-14f85c41-fdad-47d2-9717-8773bdad3258/</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pl-16 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col">
+                            <div class="self-stretch inline-flex justify-between items-end">
+                                <p class="flex-1 justify-start body-text text-2xl font-['Manrope']">
+                                 The Ultimate 2021 Fullstack Web Development Bootcamp – Udemy
+                                </p>
+                            </div>
+                            <p class="self-stretch justify-start body-text text-lg font-['Inter']">
+                                Certificate of Completion URL: <a href="https://www.udemy.com/certificate/UC-f85c4c7e-f6e5-4de2-a76d-570c3eb348d9/" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">https://www.udemy.com/certificate/UC-f85c4c7e-f6e5-4de2-a76d-570c3eb348d9/</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-14 header-text text-6xl font-['Manrope']">
+                ];
+            </p> 
+        </div>
+
     </div>
-
-    <!-- SKILLS & CERTIFICATIONS -->
-    <div class="container-fluid py-5" id="skills-certs">
-        <div>
-            <h1 class="pt-5">Skills</h1>
-            <div class="d-sm-flex justify-content-evenly mt-sm-4">
-                <div class="" id="lang">
-                    <h5>Languages</h5>
-                    <ul>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                    </ul>
+    
+    <!-- Footer -->
+    <div class="w-full mt-28 px-42 py-14 bg-[#112526]">
+        <p class="w-full header-text text-6xl font-['Manrope']">
+            Contact Me
+        </p>
+        <div class="w-full mt-14 pl-16 inline-flex flex-col gap-7">
+            <div class="inline-flex items-center gap-7">
+                <div class="size-11">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="hsl(186, 91%, 95%)" d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
                 </div>
-                <div class="" id="frame-lib">
-                    <h5>Frameworks & Libraries</h5>
-                    <ul>
-                        <li>ASP.Net Core</li>
-                        <li>Angular</li>
-                        <li>Bootstrap</li>
-                        <li>npm</li>
-                    </ul>
+                <p class="body-text text-lg font-['Inter']">
+                    <a href="mailto:colephares@gmail.com" class="hover:text-[#1AABB6]">colephares@gmail.com</a>
+                </p>
+            </div>
+            <div class="inline-flex items-center gap-7">
+                <div class="size-11">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="hsl(186, 91%, 95%)" d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg>
                 </div>
-                <div class="" id="env">
-                    <h5>Environments</h5>
-                    <ul>
-                        <li>VSCode</li>
-                        <li>Unix/Linux</li>
-                    </ul>
+                <p class="body-text text-lg font-['Inter']">
+                   <a href="https://www.linkedin.com/in/colephares/" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">www.linkedin.com/in/colephares/</a>
+                </p>
+            </div>
+            <div class="inline-flex items-center gap-7">
+                <div class="size-11">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="hsl(186, 91%, 95%)" d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"/></svg>
                 </div>
-            </div>
-        </div>
-        <div class="">
-            <h1 class="pt-5">Certifications</h1>
-            <div class="d-sm-flex flex-column text-sm-center pt-5" id="fullstack-bootcamp">
-                <h3>The Ultimate 2021 Fullstack Web Development Bootcamp</h3>
-                <p>Udemy</p>
-                <a href="https://www.udemy.com/certificate/UC-f85c4c7e-f6e5-4de2-a76d-570c3eb348d9/"><p class="fst-italic">Certificate URL</p></a>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- PROJECT EXPERIENCE -->
-    <div class="container-fluid py-5" id="project-exp">
-        <h1 class="pt-5">Project Experience</h1>
-        <div class="d-xl-flex" id="projects">
-            <div class="project" id="synchrolean">
-                <h3>Capstone Project: Lean Portland</h3>
-                <p><span class="fst-italic ">Created <a href="https://github.com/cs-capstone-team-c" target="_blank" rel="noopener noreferrer">SynchroLean</a>, a team and task management application. Application was developed for the Vancouver Clinic to modernize their workflow management system.</span></p>
-                <p>April 2018 - August 2018</p>
-                <ul>
-                    <li>
-                        Successfully delivered program on time while meeting all requirements including a database, server, mobile, web application with easy to use UI.
-                    </li>
-                    <li>
-                        Independently researched required domain knowledge. 
-                    </li>
-                    <li>
-                        Created account model for storing user data and the account web API for the server. Finalized edit account capability; created change team owner, remove team member, leave team, delete team, and compile team metrics functionalities for the web-app.
-                    </li>
-                    <li>
-                        Designed and built an automated graphing page which tracked team metrics for user-defined lengths of time.
-                    </li>
-                </ul>
-                <p><span class="text-decoration-underline">Tools & Platforms</span>: C#, Typescript, ASP.NET Core 2.0, Angular 6, SQLite, VS Code</p>
-            </div>
-            <div class="project pt-5" id="meme">
-                <h3>Full Stack Web Development Class Project</h3>
-                <p><span class="fst-italic ">Web-based <a href="https://github.com/my-meme-generator" target="_blank" rel="noopener noreferrer">meme</a> generator</span></p>
-                <p>October 2018 - December 2018</p>
-                <ul>
-                    <li>Developed a web-based program that allows users to create and like/dislike memes.</li>
-                </ul>
-                <p><span class="text-decoration-underline">Tools & Platforms</span>: JavaScript, TypeScript, MongoDB, Express, Angular 6, Node.js, VS Code</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="container-fluid py-5" id="education">
-        <h1>Education</h1>
-        <div class="d-lg-flex" id="schools">
-            <div class="school" id="psu">
-                <h3>Portland State University</h3>
-                <p>Portland, Oregon</p>
-                <p>September 2016 - December 2018</p>
-                <p>B.S., Computer Science: 3.64 GPA</p>
-                <div class="school-logo">
-                    <a href="https://www.pdx.edu" target="_blank" rel="noopener noreferrer">
-                        <img class="mt-5 img-fluid" src="images/psu.svg" alt="psu_logo">
-                    </a>
-                </div>
-            </div>
-            <div class="school" id="pcc">
-                <h3>Portland Community College</h3>
-                <p>Portland, Oregon</p>
-                <p>January 2014 - June 2016</p>
-                <div class="school-logo">
-                    <a  href="https://www.pcc.edu" target="_blank" rel="noopener noreferrer">
-                        <img class="mt-5 img-fluid" src="images/pcc.svg" alt="pcc_logo">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="container-fluid ps-5 py-5" id="contact">
-        <h1 class="">Contact</h1>
-        <div class="d-flex flex-column">
-            <p>Phone: (925) 212-2946</p>
-            <p>Email: <a href="mailto: colephares@gmail.com" id="email">colephares@gmail.com</a></p>
-            <div class="d-flex">
-                <a href="https://www.linkedin.com/in/colephares/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://github.com/zedzorander" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
+                <p class="body-text text-lg font-['Inter']">
+                    <a href="https://github.com/zedzorander" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">https://github.com/zedzorander</a>
+                </p>
             </div>
         </div>
     </div>
     
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
-    <script src="index.js"></script>
-</body>
+  </body>
 </html>
