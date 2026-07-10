@@ -9,7 +9,7 @@ Description: Portfolio website for me
 <!-- https://master.d31q4gyspf5adf.amplifyapp.com/ -->
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,60 +19,68 @@ Description: Portfolio website for me
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font Awesome -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <title>Resume — Cole Phares</title>
 
   </head>
   <body class="w-full bg-[#021112]">
-    <div class="w-full pt-8 px-42">
+    <div class="w-full pt-8 xl:px-42 md:px-20 sm:px-10 px-5">
 
         <!-- Header -->
-        <div class="w-full inline-flex justify-between">
+        <header class="w-full inline-flex justify-between">
             <p class="header-text text-4xl font-['Manrope']">
                 CP
             </p>
-            <div class="w-auto flex items-center gap-32">
-                <a href="#skills" class="body-text text-lg font-['Inter']">
-                    Skills
-                </a>
-                <a href="#professional_experience" class="body-text text-lg font-['Inter']">
-                    Professional Experience
-                </a>
-                <a href="#education" class="body-text text-lg font-['Inter']">
-                    Education
-                </a>
-                <a href="#professional_development" class="body-text text-lg font-['Inter']">
-                    Professional Development
-                </a>
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center xl:gap-32 lg:gap-16 gap-8 body-text">
+                <a href="#skills">Skills</a>
+                <a href="#professional_experience">Professional Experience</a>
+                <a href="#education">Education</a>
+                <a href="#professional_development">Professional Development</a>
+            </nav>
+
+            <div class="md:hidden relative">
+                <!-- Mobile Hamburger -->
+                <button class="text-[#E9FCFE] text-3xl" id="menu-button">
+                    <i class="fa-solid fa-bars" style="color: hsl(186, 91%, 95%);"></i>
+                </button>
+    
+                <!-- Mobile Navigation -->
+                <nav id="mobile-menu" class="hidden absolute right-0 top-full mt-4 w-64 rounded-lg bg-[#112526] p-6 shadow-lg z-50">
+                    <div class="flex flex-col gap-6 body-text text-right">
+                        <a href="#skills" class="menu-items">Skills</a>
+                        <a href="#professional_experience" class="menu-items">Professional Experience</a>
+                        <a href="#education" class="menu-items">Education</a>
+                        <a href="#professional_development" class="menu-items">Professional Development</a>
+                    </div>
+                </nav>
             </div>
-        </div>
+        </header>
+
 
         <!-- Hero & About Me Section -->
         <div class="mt-14">
             <!-- Hero Section -->
-            <div class="w-full py-6 inline-flex justify-between">
-                <div class="pl-24 mt-14">
-                    <p class="header-text text-9xl font-['Manrope']">
+            <div class="w-full py-6 lg:inline-flex justify-between">
+                <div class="md:pl-24 sm:pl-16 mt-14">
+                    <p class="header-text md:text-9xl text-7xl font-['Manrope']">
                         Cole Phares
                     </p>
-                    <p class="body-text text-4xl font-['Manrope']">
+                    <p class="body-text md:text-4xl text-3xl font-['Manrope']">
                         Software Engineer
                     </p>
                 </div>
-                <div class="w-[500px] h-[650px] px-20 py-20 relative flex justify-start items-center gap-2.5">
-                    <div class="w-[500px] h-[650px] left-0 top-0 absolute bg-radial from-cyan-50/20 via-cyan-50/20 to-cyan-50/0 rounded-full blur-xl"></div>
-                    <img class="w-80 h-[502px] grayscale rounded-xl" src="./images/website photo.jpg" />
+                <div class="relative w-full max-w-[300px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[500px] h-[400px] sm:h-[500px] md:h-[575px] lg:h-[650px] flex justify-center items-center">
+                    <div class="absolute inset-0 bg-radial from-cyan-50/20 via-cyan-50/20 to-cyan-50/0 rounded-full blur-xl"></div>
+                    <img class="w-56 sm:w-64 md:w-72 lg:w-80 h-auto grayscale rounded-xl object-cover" src="./images/website photo.jpg" />
                 </div>
             </div>
             
             <!-- About Me Section -->
-            <div class="w-full pl-24 pr-12 inline-flex flex-col justify-start items-start gap-14">
-                <p class="header-text text-6xl font-['Manrope']">
+            <div class="w-full md:pl-24 sm:pl-16 sm:pr-12 inline-flex flex-col justify-start items-start gap-14">
+                <p class="header-text md:text-6xl text-5xl font-['Manrope']">
                     About Me
                 </p>
                 <p class="body-text text-lg font-['Inter']">
@@ -89,11 +97,11 @@ Description: Portfolio website for me
         </div>
       
         <!-- Skills Section -->
-        <div id="skills">
-            <p class="mt-28 header-text text-6xl font-['Manrope']">
+        <div id="skills" class="scroll-mt-10">
+            <p class="mt-28 header-text md:text-6xl text-5xl font-['Manrope']">
                 Skills = [
             </p>
-            <div class="w-full pl-24">
+            <div class="w-full md:pl-24 sm:pl-12">
     
                 <!-- Front-End Development Skills Section -->
                 <div class="w-full mt-14">
@@ -251,35 +259,35 @@ Description: Portfolio website for me
                     </div>
                 </div>
             </div>
-            <p class="mt-14 header-text text-6xl font-['Manrope']">
+            <p class="mt-14 header-text md:text-6xl text-5xl font-['Manrope']">
                 ];
             </p>
         </div>
 
         <!-- Professional Experience Section -->
-        <div id="professional_experience">
-            <p class="mt-28 header-text text-6xl font-['Manrope']">
-                Professional Experience =[
+        <div id="professional_experience" class="scroll-mt-10">
+            <p class="mt-28 header-text md:text-6xl text-5xl font-['Manrope']">
+                Professional Experience = [
             </p>
             <div class="w-full mt-14 flex-col justify-start items-start">
                 
                 <!-- Void3 -->
-                <div class="pl-16 pr-6 py-7 relative">
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
                     <!-- Halo Effect -->
                     <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
                     <!-- Card -->
                     <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
                         <div class="w-full p-4 inline-flex flex-col gap-12">
-                            <div class="flex flex-col">
-                                <div class="inline-flex justify-between items-end">
-                                    <p class="body-text text-2xl font-['Manrope']">
-                                        Software Engineer III
-                                    </p>
-                                    <p class="body-text text-lg font-['Inter']">
-                                        July 2026 - Present
-                                    </p>
-                                </div>
-                                <p class="body-text text-lg font-['Inter']">
+                            <div class="flex flex-wrap md:justify-between items-end">
+                                <p class="order-1 body-text text-2xl font-['Manrope']">
+                                    Software Engineer III
+                                </p>
+
+                                <p class="order-3 md:order-2 w-full md:w-auto body-text text-lg font-['Inter']">
+                                    July 2026 - Present
+                                </p>
+
+                                <p class="order-2 md:order-3 w-full body-text text-lg font-['Inter']">
                                     Void3
                                 </p>
                             </div>
@@ -309,22 +317,20 @@ Description: Portfolio website for me
                 </div>
 
                 <!-- The Natural Baby Company -->
-                <div class="pl-16 pr-6 py-7 relative">
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
                     <!-- Halo -->
                     <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
                     <!-- Card -->
                     <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
                         <div class="w-full p-4 inline-flex flex-col gap-12">
-                            <div class="flex flex-col">
-                                <div class="inline-flex justify-between items-end">
-                                    <p class="body-text text-2xl font-['Manrope']">
-                                        Software Engineer (Contractor)
-                                    </p>
-                                    <p class="body-text text-lg font-['Inter']">
-                                        Feb. 2026
-                                    </p>
-                                </div>
-                                <p class="body-text text-lg font-['Inter']">
+                            <div class="flex flex-wrap md:justify-between items-end">
+                                <p class="order-1 body-text text-2xl font-['Manrope']">
+                                    Software Engineer (Contractor)
+                                </p>
+                                <p class="order-3 md:order-2 w-full md:w-auto body-text text-lg font-['Inter']">
+                                    Feb. 2026
+                                </p>
+                                <p class="order-2 md:order-3 w-full body-text text-lg font-['Inter']">
                                     The Natural Baby Company
                                 </p>
                             </div>
@@ -344,22 +350,20 @@ Description: Portfolio website for me
                 </div>
 
                 <!-- Fore! Corners Golf -->
-                <div class="pl-16 pr-6 py-7 relative">
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
                     <!-- Halo -->
                     <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
                     <!-- Card -->
                     <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
                         <div class="w-full p-4 inline-flex flex-col gap-12">
-                            <div class="flex flex-col">
-                                <div class="inline-flex justify-between items-end">
-                                    <p class="body-text text-2xl font-['Manrope']">
-                                        Software Engineer (Contractor)
-                                    </p>
-                                    <p class="body-text text-lg font-['Inter']">
-                                        Nov. 2025
-                                    </p>
-                                </div>
-                                <p class="body-text text-lg font-['Inter']">
+                            <div class="flex flex-wrap md:justify-between items-end">
+                                <p class="order-1 body-text text-2xl font-['Manrope']">
+                                    Software Engineer (Contractor)
+                                </p>
+                                <p class="order-3 md:order-2 w-full md:w-auto body-text text-lg font-['Inter']">
+                                    Nov. 2025
+                                </p>
+                                <p class="order-2 md:order-3 w-full body-text text-lg font-['Inter']">
                                     Fore! Corners Golf
                                 </p>
                             </div>
@@ -379,22 +383,20 @@ Description: Portfolio website for me
                 </div>
 
                 <!-- ViralHog LLC -->
-                <div class="pl-16 pr-6 py-7 relative">
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
                     <!-- Halo -->
                     <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
                     <!-- Card -->
                     <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
                         <div class="w-full p-4 inline-flex flex-col gap-12">
-                            <div class="flex flex-col">
-                                <div class="inline-flex justify-between items-end">
-                                    <p class="body-text text-2xl font-['Manrope']">
-                                        Software Engineer I
-                                    </p>
-                                    <p class="body-text text-lg font-['Inter']">
-                                        Nov. 2021 - Sept. 2025
-                                    </p>
-                                </div>
-                                <p class="body-text text-lg font-['Inter']">
+                            <div class="flex flex-wrap md:justify-between items-end">
+                                <p class="order-1 body-text text-2xl font-['Manrope']">
+                                    Software Engineer I
+                                </p>
+                                <p class="order-3 md:order-2 w-full md:w-auto body-text text-lg font-['Inter']">
+                                    Nov. 2021 - Sept. 2025
+                                </p>
+                                <p class="order-2 md:order-3 w-full body-text text-lg font-['Inter']">
                                     ViralHog LLC
                                 </p>
                             </div>
@@ -495,104 +497,100 @@ Description: Portfolio website for me
                     </div>
                 </div>
             </div>
-            <p class="mt-14 header-text text-6xl font-['Manrope']">
+            <p class="mt-14 header-text md:text-6xl text-5xl font-['Manrope']">
                 ];
             </p>
         </div>
 
         <!-- Education Section -->
-        <div id="education">
-            <p class="mt-28 header-text text-6xl font-['Manrope']">
+        <div id="education" class="scroll-mt-10">
+            <p class="mt-28 header-text md:text-6xl text-5xl font-['Manrope']">
                 Education = [
             </p>
             <div class="w-full mt-14 flex-col justify-start items-start">
-                <div class="pl-16 pr-6 py-7 relative">
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
                     <!-- Halo -->
                     <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
                     <!-- Card -->
                     <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
-                        <div class="w-full p-4 inline-flex flex-col">
-                            <div class="flex flex-col">
-                                <div class="inline-flex justify-between items-end">
-                                    <p class="body-text text-2xl font-['Manrope']">
-                                        Portland State University
-                                    </p>
-                                    <p class="body-text text-lg font-['Inter']">
-                                        Sept. 2016 - Dec. 2018
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="body-text text-lg font-['Inter']">
+                        <div class="w-full p-4 flex flex-wrap justify-between items-end">
+                            <p class="order-1 body-text text-2xl font-['Manrope']">
+                                Portland State University
+                            </p>
+                            <p class="order-3 md:order-2 w-full md:w-auto body-text text-lg font-['Inter']">
+                                Sept. 2016 - Dec. 2018
+                            </p>
+                            <p class="order-2 md:order-3 w-full body-text text-lg font-['Inter']">
                                 Bachelor’s of Science, Computer Science
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="pl-16 pr-6 py-7 relative">
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                     <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 flex flex-wrap justify-between items-end">
+                            <p class="order-1 body-text text-2xl font-['Manrope']">
+                                Portland Community College
+                            </p>
+                            <p class="order-2 w-full md:w-auto body-text text-lg font-['Inter']">
+                                Jan. 2014 - June 2016
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-14 header-text md:text-6xl text-5xl font-['Manrope']">
+                ];
+            </p>
+        </div>
+      
+        <!-- Professional Development Section -->
+        <div id="professional_development" class="scroll-mt-10">
+            <p class="mt-28 header-text md:text-6xl text-5xl font-['Manrope']">
+                Professional Development = [
+            </p>
+            <div class="w-full mt-14 flex-col justify-start items-start">
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
+                    <!-- Halo -->
+                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
+                    <!-- Card -->
+                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
+                        <div class="w-full p-4 inline-flex flex-col">
+                        <div class="inline-flex justify-between items-end">
+                            <p class="w-[672px] justify-start body-text text-2xl font-['Manrope']">
+                            UX/UI Web Design in Figma | Advanced Level | Eng – Udemy
+                            </p>
+                        </div>
+                        <hr class="border-[#E9FCFE] my-3">
+                        <p class="justify-start body-text text-lg font-['Inter']">
+                            Certificate of Completion URL: <a href="https://www.udemy.com/certificate/UC-14f85c41-fdad-47d2-9717-8773bdad3258/" class="hover:text-[#1AABB6] break-all" target="_blank" rel="noreferrer">https://www.udemy.com/certificate/UC-14f85c41-fdad-47d2-9717-8773bdad3258/</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:pl-24 sm:pl-12 pr-6 py-7 relative">
                     <!-- Halo -->
                     <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
                     <!-- Card -->
                     <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
                         <div class="w-full p-4 inline-flex flex-col">
                             <div class="inline-flex justify-between items-end">
-                                <p class="body-text text-2xl font-['Manrope']">
-                                    Portland Community College
-                                </p>
-                                <p class="body-text text-lg font-['Inter']">
-                                    Jan. 2014 - June 2016
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-14 header-text text-6xl font-['Manrope']">
-                ];
-            </p>
-        </div>
-      
-        <!-- Professional Development Section -->
-        <div id="professional_development">
-            <p class="mt-28 header-text text-6xl font-['Manrope']">
-                Professional Development = [
-            </p>
-            <div class="w-full mt-14 flex-col justify-start items-start">
-                <div class="pl-16 pr-6 py-7 relative">
-                    <!-- Halo -->
-                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
-                    <!-- Card -->
-                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
-                        <div class="w-full p-4 inline-flex flex-col">
-                        <div class="self-stretch inline-flex justify-between items-end">
-                            <p class="w-[672px] justify-start body-text text-2xl font-['Manrope']">
-                            UX/UI Web Design in Figma | Advanced Level | Eng – Udemy
-                            </p>
-                        </div>
-                        <p class="self-stretch justify-start body-text text-lg font-['Inter']">
-                            Certificate of Completion URL: <a href="https://www.udemy.com/certificate/UC-14f85c41-fdad-47d2-9717-8773bdad3258/" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">https://www.udemy.com/certificate/UC-14f85c41-fdad-47d2-9717-8773bdad3258/</a>
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pl-16 pr-6 py-7 relative">
-                    <!-- Halo -->
-                    <div class="w-full h-full left-0 top-0 absolute bg-radial from-[#E9FCFE]/20 via-[#E9FCFE]/10 to-[#E9FCFE]/0 rounded-full blur-xl"></div>
-                    <!-- Card -->
-                    <div class="w-full relative rounded-3xl border border-[#365B5D] bg-[#112526]">
-                        <div class="w-full p-4 inline-flex flex-col">
-                            <div class="self-stretch inline-flex justify-between items-end">
                                 <p class="flex-1 justify-start body-text text-2xl font-['Manrope']">
                                  The Ultimate 2021 Fullstack Web Development Bootcamp – Udemy
                                 </p>
                             </div>
-                            <p class="self-stretch justify-start body-text text-lg font-['Inter']">
-                                Certificate of Completion URL: <a href="https://www.udemy.com/certificate/UC-f85c4c7e-f6e5-4de2-a76d-570c3eb348d9/" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">https://www.udemy.com/certificate/UC-f85c4c7e-f6e5-4de2-a76d-570c3eb348d9/</a>
+                            <hr class="border-[#E9FCFE] my-3">
+                            <p class="justify-start body-text text-lg font-['Inter']">
+                                Certificate of Completion URL: <a href="https://www.udemy.com/certificate/UC-f85c4c7e-f6e5-4de2-a76d-570c3eb348d9/" class="hover:text-[#1AABB6] break-all" target="_blank" rel="noreferrer">https://www.udemy.com/certificate/UC-f85c4c7e-f6e5-4de2-a76d-570c3eb348d9/</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="mt-14 header-text text-6xl font-['Manrope']">
+            <p class="mt-14 header-text md:text-6xl text-5xl font-['Manrope']">
                 ];
             </p> 
         </div>
@@ -600,32 +598,27 @@ Description: Portfolio website for me
     </div>
     
     <!-- Footer -->
-    <div class="w-full mt-28 px-42 py-14 bg-[#112526]">
-        <p class="w-full header-text text-6xl font-['Manrope']">
+    <div class="w-full mt-28 xl:px-42 md:px-20 px-10 py-14 bg-[#112526]">
+        <p class="w-full header-text md:text-6xl text-5xl font-['Manrope']">
             Contact Me
         </p>
-        <div class="w-full mt-14 pl-16 inline-flex flex-col gap-7">
-            <div class="inline-flex items-center gap-7">
-                <div class="size-11">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="hsl(186, 91%, 95%)" d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
-                </div>
-                <p class="body-text text-lg font-['Inter']">
-                    <a href="mailto:colephares@gmail.com" class="hover:text-[#1AABB6]">colephares@gmail.com</a>
+        <div class="body-text w-full mt-14 sm:pl-16 inline-flex flex-col gap-7">
+            <div class="inline-flex items-center gap-7 has-[a:hover]:text-[#1AABB6]">
+                <i class="fa-solid fa-envelope fa-2xl"></i>
+                <p class="sm:text-lg font-['Inter']">
+                    <a href="mailto:colephares@gmail.com" class=" hover:text-[#1AABB6]">colephares@gmail.com</a>
+
                 </p>
             </div>
-            <div class="inline-flex items-center gap-7">
-                <div class="size-11">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="hsl(186, 91%, 95%)" d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg>
-                </div>
-                <p class="body-text text-lg font-['Inter']">
+            <div class="inline-flex items-center gap-7 has-[a:hover]:text-[#1AABB6]">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                <p class="sm:text-lg font-['Inter']">
                    <a href="https://www.linkedin.com/in/colephares/" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">www.linkedin.com/in/colephares/</a>
                 </p>
             </div>
-            <div class="inline-flex items-center gap-7">
-                <div class="size-11">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="hsl(186, 91%, 95%)" d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"/></svg>
-                </div>
-                <p class="body-text text-lg font-['Inter']">
+            <div class="inline-flex items-center gap-7 has-[a:hover]:text-[#1AABB6]">
+                <i class="fa-brands fa-github fa-2xl"></i>
+                <p class="sm:text-lg font-['Inter']">
                     <a href="https://github.com/zedzorander" class="hover:text-[#1AABB6]" target="_blank" rel="noreferrer">https://github.com/zedzorander</a>
                 </p>
             </div>
@@ -633,4 +626,6 @@ Description: Portfolio website for me
     </div>
     
   </body>
+
+  <script src="index.js"></script>
 </html>
